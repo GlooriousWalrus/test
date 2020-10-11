@@ -1,0 +1,25 @@
+// Variables
+
+// Gray and Brand Colors for use across theme
+
+$theme-primary: #fdcc52;
+$theme-secondary: #064c57; // #7b4397;
+$theme-tertiary: #068c95; // #dc2430
+$theme-4: #3a93ae;
+
+$gray-base: #000;
+$gray-darker: lighten($gray-base, 13.5%); // #222
+$gray-dark: lighten($gray-base, 20%); // #333
+$gray: lighten($gray-base, 33.5%); // #555
+$gray-light: lighten($gray-base, 46.7%); // #777
+$gray-lighter: lighten($gray-base, 93.5%); // #eee
+
+$igem-darkest: #064c57;
+$igem-lightblue: #68c8dc;
+
+// colors
+
+$color-1: #3a2c41; // Blackcurrant
+$color-2: #eaf2e3; // Willow Brook
+$color-3: #064c57; // Black
+$color-4: #fdcc52; // Gimblet

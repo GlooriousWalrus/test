@@ -54,14 +54,14 @@ Open <http://localhost:3000> to see the page in action.
 
 The following npm scripts are available to you in this starter repo. With the exception of `npm start`, the remaining scripts can be run from your command line with `npm run scriptName`.
 
-| Script | Description |
-| --- | --- |
-| `server` | Starts a local server (<http://localhost:3000>) for development |
-| `watch` | Automatically recompiles CSS as it watches the `scss` directory for changes |
-| `css` | Runs `css-compile` and `css-prefix` |
-| `css-compile` | Compiles source Sass into CSS |
-| `css-prefix` | Runs Autoprefixer on the compiled CSS |
-| `css-purge` | Runs PurgeCSS to remove CSS that is unused by `index.html` |
+| Script        | Description                                                                 |
+| ------------- | --------------------------------------------------------------------------- |
+| `server`      | Starts a local server (<http://localhost:3000>) for development             |
+| `watch`       | Automatically recompiles CSS as it watches the `scss` directory for changes |
+| `css`         | Runs `css-compile` and `css-prefix`                                         |
+| `css-compile` | Compiles source Sass into CSS                                               |
+| `css-prefix`  | Runs Autoprefixer on the compiled CSS                                       |
+| `css-purge`   | Runs PurgeCSS to remove CSS that is unused by `index.html`                  |
 
 ## Advanced usage
 

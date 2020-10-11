@@ -1,0 +1,39 @@
+.collabsection3 {
+  //   padding-bottom: 5vw;
+  //   padding-top: 5vw;
+
+  .collabdrops {
+    width: 25vw;
+    left: 75%;
+    margin-top: -15%;
+    position: absolute;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+
+  .collableaf {
+    width: 23vw;
+  }
+
+  .textbox {
+    width: 32vw;
+  }
+
+  .united {
+    font-family: 'Lobster';
+    color: #004f57;
+    font-size: 7vw;
+    margin-top: 8vw;
+    margin-left: 2vw;
+  }
+
+  .subtext {
+    color: #004f57;
+    font-size: 2vw;
+    margin-left: 2vw;
+  }
+}

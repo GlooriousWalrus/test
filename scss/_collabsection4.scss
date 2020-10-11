@@ -1,0 +1,24 @@
+.collabsection4 {
+  background-image: url('collabs-03.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 55.5vw;
+  width: 100%;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 18%;
+    margin-right: 18%;
+    padding-top: 10%;
+  }
+
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+    img {
+      width: 15vw;
+    }
+    margin-top: 2vw;
+  }
+}

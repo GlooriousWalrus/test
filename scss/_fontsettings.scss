@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Lobster';
+  // src: url('https://2020.igem.org/wiki/images/7/77/T--Estonia_TUIT--lobster.woff')
+  //     format('woff'),
+  src: url('lobster.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Muli';
+  // src: url('https://2020.igem.org/wiki/images/9/91/T--Estonia_TUIT--muli.woff')
+  //     format('woff'),
+  src: url('muli.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'HelloSanttiny';
+  // src: url('https://2020.igem.org/wiki/images/8/86/T--Estonia_TUIT--hellosanttiny.woff')
+  //     format('woff'),
+  src: url('hellosanttiny.woff'), format('woff');
+}
+
+h1,
+h2 {
+  font-family: 'Lobster', cursive !important;
+  color: white;
+}
+
+p {
+  font-family: 'Muli' !important;
+  // font-style: italic;
+  font-weight: bold;
+  color: white;
+  // letter-spacing: 1px;
+}
+
+h3 {
+  font-family: 'Muli' !important;
+}
