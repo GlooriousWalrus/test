@@ -1,0 +1,98 @@
+#collabmodal {
+  .modal-dialog {
+    max-width: 90%;
+
+    .modal-content {
+      border-radius: 2vw;
+    }
+  }
+
+  .modal-header {
+    margin-left: 11.5%;
+    margin-right: 11.5%;
+
+    .close {
+      width: 2vw;
+      height: 2vw;
+      color: #00c5cc;
+      span {
+        display: block;
+        width: 2vw;
+        height: 2vw;
+      }
+    }
+  }
+
+  .modal-header {
+    font-family: 'Lobster';
+    color: #00c4cd;
+    padding-bottom: unset;
+
+    border-bottom: unset;
+    padding-left: 0;
+    padding-right: 0;
+
+    .modal-title {
+      padding-top: 4vw;
+      font-size: 6.5vw;
+      padding-bottom: 1rem;
+
+      border-bottom-style: solid;
+      border-bottom-color: #00c4cd;
+      border-bottom-width: 1px;
+    }
+  }
+
+  .modal-body {
+    color: #00666b;
+    font-family: 'Muli';
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+    font-size: 2.2vw;
+    font-weight: bolder;
+    margin-left: 11.75%;
+    margin-right: 15%;
+
+    .modal-title {
+      font-family: 'Lobster';
+      padding-top: 1.5vw;
+      padding-bottom: 4vw;
+      font-size: 5vw;
+    }
+
+    .bluerect,
+    .whiterect {
+      background-color: #8ceaed;
+      margin-left: auto;
+      margin-right: auto;
+      transform: rotate(-10deg);
+      width: 50vw;
+      height: 31vw;
+    }
+
+    .bluerect {
+      margin-top: 7vw;
+      height: 35vw !important;
+    }
+
+    .whiterect {
+      background-color: white;
+      position: absolute;
+      transform: translateY(-95%) rotate(10deg);
+      margin-left: 8vw;
+      height: 38vw;
+    }
+
+    img {
+      width: 50vw;
+      position: absolute;
+      transform: translateY(-105%);
+      margin-left: 7vw;
+    }
+  }
+
+  .modal-footer {
+    border-top: unset;
+  }
+}
