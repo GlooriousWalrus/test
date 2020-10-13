@@ -45,7 +45,7 @@ tsParticles.load('tsparticles', {
         enable: true,
         value_area: 300,
       },
-      value: 80,
+      value: 160,
     },
     opacity: {
       value: 0.7,
@@ -64,7 +64,7 @@ tsParticles.load('tsparticles', {
       random: true,
       value: 5,
       anim: {
-        enable: true,
+        enable: false,
         speed: 2,
         size_min: 0.1,
         sync: false,

@@ -1,0 +1,43 @@
+.stickybar {
+  position: sticky;
+  top: 10vh;
+  left: 5vw;
+  height: 0px;
+  width: 20vw;
+
+  ul {
+    padding-top: 10vw;
+
+    li {
+      font-family: 'Lobster';
+      font-size: 3vw;
+      color: #0092b0;
+      padding-bottom: 1vw;
+
+      border-right: 2px solid #0092b0;
+
+      a {
+        color: #0092b0;
+      }
+
+      &.invert {
+        color: white;
+        border-right-color: white;
+
+        a {
+          color: white;
+        }
+      }
+
+      &.active,
+      &:hover {
+        color: #00c7d2;
+
+        a {
+          color: #00c7d2;
+          text-decoration: unset;
+        }
+      }
+    }
+  }
+}
