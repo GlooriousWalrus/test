@@ -1,0 +1,41 @@
+.parts-table {
+  background-color: white;
+  padding-bottom: 10vw;
+
+  table {
+    border: 3px solid #00c7cf;
+    border-top-left-radius: 5vw;
+    border-top-right-radius: 5vw;
+    border-bottom-left-radius: 5vw;
+    border-bottom-right-radius: 5vw;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  thead {
+    tr {
+      background-color: #00c7cf;
+      border-top: 3px solid #00c7cf;
+      th {
+        padding-bottom: 2.5vw;
+        padding-top: 2vw;
+        font-size: 2.5vw;
+        font-family: 'Muli';
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+
+  tbody {
+    font-family: 'Muli';
+    background-color: #f0f0f0;
+    font-size: 1.5vw;
+
+    td {
+      text-align: center;
+      color: black;
+    }
+  }
+}

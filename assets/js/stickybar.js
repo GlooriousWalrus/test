@@ -44,7 +44,6 @@ function intersectionCallback(entries) {
   var arr = Object.keys(ratiodict).map(function (key) {
     return ratiodict[key];
   });
-  console.log(arr.indexOf(Math.max(...arr)));
   listitems[arr.indexOf(Math.max(...arr))].classList.add('active');
 }
 

@@ -1,0 +1,57 @@
+.parts-decor {
+  background-color: white;
+  padding-bottom: 8vw;
+  display: flex;
+  justify-content: space-around;
+
+  .spacebetween {
+    width: 30vw;
+  }
+
+  .parts-rect {
+    background-color: #00c7cd;
+    border-radius: 25%;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .rec1 {
+    height: 2vw;
+    width: 2vw;
+
+    margin-top: 0.75vw;
+    animation: spin 4s infinite linear;
+  }
+
+  .rec2 {
+    background-color: #0093ab;
+    height: 3vw;
+    width: 3vw;
+
+    margin-top: 0.5vw;
+    animation: spin2 3s infinite linear;
+  }
+
+  .rec3 {
+    height: 4vw;
+    width: 4vw;
+
+    animation: spin 4s infinite linear;
+  }
+}

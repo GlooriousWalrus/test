@@ -34,7 +34,7 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/images";
 @import 'bootstrap/scss/code';
 @import 'bootstrap/scss/grid';
-// @import "bootstrap/scss/tables";
+@import 'bootstrap/scss/tables';
 @import 'bootstrap/scss/forms';
 @import 'bootstrap/scss/buttons';
 @import 'bootstrap/scss/transitions';
@@ -44,7 +44,7 @@ $body-bg: #f5f5f5;
 @import 'bootstrap/scss/custom-forms';
 @import 'bootstrap/scss/nav';
 @import 'bootstrap/scss/navbar'; // Requires nav
-// @import "bootstrap/scss/card";
+@import 'bootstrap/scss/card';
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
@@ -80,3 +80,7 @@ $body-bg: #f5f5f5;
 
 // description
 @import 'descriptionsection.scss';
+
+// parts
+@import 'partstable.scss';
+@import 'partsdecor.scss';
