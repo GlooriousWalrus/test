@@ -1,0 +1,149 @@
+.generic-section {
+  background-color: #ffffff;
+  padding-bottom: 10vw;
+  padding-top: 5vw;
+  .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
+  .introduction {
+    font-size: 5vw;
+    color: #0092ac;
+    position: absolute;
+    transform: translateY(110%) rotate(-90deg);
+    display: inline-block;
+    margin-bottom: 0;
+    padding-bottom: 1vw;
+    border-bottom: 1px solid #0092ac;
+  }
+  .collabtext {
+    font-family: Muli;
+    font-size: 2vw;
+    color: #0092ac;
+    font-weight: bolder;
+    // flex-grow: 6;
+    width: 60%;
+    margin-left: 20vw;
+  }
+}
+
+.implementation {
+  .introduction {
+    margin-left: 5vw;
+  }
+  .collabtext {
+    margin-left: 25vw;
+  }
+}
+
+.implementation-section2 {
+  height: 80vw;
+  .comm {
+    height: inherit;
+    width: 50%;
+    float: left;
+    background-color: #ecf7f4;
+    h3 {
+      font-family: 'Muli';
+      font-size: 4vw;
+      margin-top: 10vw;
+      color: #008b93;
+      border-bottom: 2px solid #0092ac;
+      display: inline-block;
+      margin-left: 13%;
+      margin-right: 13%;
+      padding-bottom: 3vw;
+      margin-bottom: 3vw;
+    }
+    p {
+      font-family: 'Muli';
+      font-size: 2vw;
+      margin-left: 14%;
+      margin-right: 22%;
+      color: #008c93;
+    }
+  }
+  .public {
+    height: inherit;
+    width: 50%;
+    float: right;
+    background-color: #008c93;
+    h3 {
+      font-family: 'Muli';
+      font-size: 4vw;
+      margin-top: 10vw;
+      color: white;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      margin-left: 22%;
+      margin-right: 16%;
+      padding-bottom: 3vw;
+      margin-bottom: 3vw;
+    }
+    p {
+      font-family: 'Muli';
+      font-size: 2vw;
+      margin-left: 22%;
+      margin-right: 14%;
+      color: white;
+    }
+  }
+  .question {
+    position: absolute;
+    width: 20vw;
+    left: 40vw;
+    margin-top: 15vw;
+  }
+  .pill-button {
+    margin-top: 2vw;
+    margin-left: 25%;
+    background-color: #008c93;
+    border-radius: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-family: 'Muli';
+    font-size: 3vw;
+    color: white;
+    margin-bottom: 10vw;
+  }
+  .whitebtn {
+    background-color: white;
+    color: #008c93;
+  }
+}
+
+.implementation-section3 {
+  .mansvg {
+    margin-top: 5vw;
+    margin-left: 10vw;
+    width: 30vw;
+  }
+  .impltext {
+    font-family: Muli;
+    font-size: 2vw;
+    color: #0092ac;
+    font-weight: bolder;
+    width: 50%;
+    margin-left: 5vw;
+
+    h1 {
+      color: #0092ac;
+      font-size: 5.5vw;
+      margin-bottom: 2vw;
+      margin-top: 2.5vw;
+    }
+  }
+  .pill-button {
+    margin-top: 2vw;
+    margin-left: 25%;
+    background-color: #008c93;
+    border-radius: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-family: 'Muli';
+    font-size: 3vw;
+    color: white;
+    // margin-bottom: 10vw;
+  }
+}

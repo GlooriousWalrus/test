@@ -28,7 +28,9 @@
 
 // Styling for the navbar
 .mainNav {
+  // filter: blur(1px);
   border-color: fade-out($gray-darker, 0.95);
+  border-bottom: 1px solid black;
   background-color: white;
   @include transition-all;
   @include heading-font;
@@ -99,6 +101,7 @@
     &.navbar-shrink {
       border-color: fade-out($gray-darker, 0.9);
       background-color: white;
+      border-bottom: 1px solid black;
 
       .navbar-nav .nav-item .nav-link {
         color: black;

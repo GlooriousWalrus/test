@@ -31,7 +31,7 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/root";
 @import 'bootstrap/scss/reboot'; // Required
 @import 'bootstrap/scss/type';
-// @import "bootstrap/scss/images";
+@import 'bootstrap/scss/images';
 @import 'bootstrap/scss/code';
 @import 'bootstrap/scss/grid';
 @import 'bootstrap/scss/tables';
@@ -71,9 +71,9 @@ $body-bg: #f5f5f5;
 @import 'footer.scss';
 @import 'banner.scss';
 @import 'sticky.scss';
+@import 'genericsection.scss';
 
 // collaboration
-@import 'collabsection2.scss';
 @import 'collabsection3.scss';
 @import 'collabsection4.scss';
 @import 'collabmodal.scss';

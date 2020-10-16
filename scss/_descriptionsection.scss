@@ -3,7 +3,7 @@
   padding-bottom: 3vw;
 
   p {
-    font-family: Muli;
+    font-family: 'Muli';
     font-size: 2vw;
     color: #0092ac;
     font-weight: bolder;
@@ -12,6 +12,35 @@
 
     margin-left: 30vw;
     padding-top: 2vw;
+  }
+
+  .pill-button {
+    margin-top: 2vw;
+    margin-left: 48vw;
+    background-color: #0092ac;
+    border-radius: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-family: 'Muli';
+    font-size: 3vw;
+    color: white;
+  }
+
+  .image-placeholder {
+    margin-left: 30vw;
+    margin-top: 6vw;
+
+    border-radius: 5vw;
+    background-color: #eee;
+    display: flex;
+    height: 35vw;
+    width: 58vw;
+
+    h4 {
+      align-self: center;
+      text-align: center;
+      width: 100%;
+    }
   }
 
   h1 {

@@ -30,7 +30,7 @@ function intersectionCallback(entries) {
     // section 2 inverts nav to white
     if (dict[entry.target.id] === listitems[1]) {
       Array.from(listitems).forEach(
-        entry.isIntersecting && entry.intersectionRatio > 0.4
+        entry.isIntersecting && entry.intersectionRatio > 0.75
           ? addInvert
           : rmInvert
       );
