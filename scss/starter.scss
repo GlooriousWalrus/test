@@ -8,6 +8,12 @@
 
 html {
   scroll-behavior: smooth;
+
+  .body {
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
 
 //
@@ -64,7 +70,7 @@ $body-bg: #f5f5f5;
 // @import "bootstrap/scss/print";
 
 //
-// Stylings for sections
+// Stylings for pages
 //
 
 @import 'navbar.scss';
@@ -72,8 +78,9 @@ $body-bg: #f5f5f5;
 @import 'banner.scss';
 @import 'sticky.scss';
 @import 'genericsection.scss';
+@import 'loader.scss';
 
-// collaboration
+// collab
 @import 'collabsection3.scss';
 @import 'collabsection4.scss';
 @import 'collabmodal.scss';
@@ -84,3 +91,6 @@ $body-bg: #f5f5f5;
 // parts
 @import 'partstable.scss';
 @import 'partsdecor.scss';
+
+// home
+@import 'home.scss';

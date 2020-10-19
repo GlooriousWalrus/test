@@ -16,6 +16,7 @@
   .navbar .dropdown-menu.fade-up {
     top: 180%;
   }
+
   .navbar .nav-item:hover .dropdown-menu {
     transition: 0.3s;
     opacity: 1;
@@ -26,21 +27,22 @@
 }
 /* ============ desktop view .end// ============ */
 
+.navbar .nav-item .dropdown-menu .dropdown-item:visited {
+  color: #008c93 !important;
+}
+
 // Styling for the navbar
 .mainNav {
   // filter: blur(1px);
   border-color: fade-out($gray-darker, 0.95);
   border-bottom: 1px solid black;
   background-color: white;
+  padding-bottom: 0;
   @include transition-all;
   @include heading-font;
   .navbar .nav-item:not(:last-child) {
     margin-right: 35px;
   }
-
-  //   &:hover {
-  //     background-color: white;
-  //   }
 
   @media all and (max-width: 992px) {
     .navbar-nav.navbar-center {

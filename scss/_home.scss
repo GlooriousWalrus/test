@@ -1,0 +1,561 @@
+.home-section-1 {
+  background: linear-gradient(
+    180deg,
+    rgba(58, 147, 174, 1) 20%,
+    rgba(0, 79, 87, 1) 30%
+  );
+  display: block;
+
+  .fixedparticles {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+  }
+
+  // temporary !!!
+  .homebanner {
+    height: 100vh;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home-section-1 {
+    background: linear-gradient(
+      180deg,
+      rgba(58, 147, 174, 1) 35%,
+      rgba(0, 79, 87, 1) 50%
+    );
+  }
+}
+
+.centralizer {
+  display: inline-block;
+}
+
+.home-section-2 {
+  display: flex;
+  justify-content: center;
+  // background-color: #004f57;
+  left: 0;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+
+  .sun {
+    position: relative;
+    // width: 20vw;
+    // height: 20vw;
+    margin: 100px auto;
+    margin-bottom: 10%;
+    z-index: 3;
+    border-radius: 50%;
+    background-color: #ffffcc;
+    box-shadow: inset 0 0 50px #ffffcc, inset 20px 0 80px #f4dd35,
+      inset -20px 0 80px #ffffcc, inset 20px 0 300px #f4dd35,
+      inset -20px 0 300px #f4dd35, 0 0 50px #f4dd35, -10px 0 80px #f4dd35,
+      10px 0 80px #f4dd35;
+
+    .sun-header {
+      color: white !important;
+      position: relative;
+      user-select: none;
+    }
+
+    /* For desktop: */
+    @media only screen and (min-width: 768px) {
+      width: 15vw;
+      height: 15vw;
+
+      .sun-header {
+        font-size: 9vw;
+        right: 55%;
+        top: 3vw;
+      }
+    }
+
+    @media only screen and (min-width: 1024px) {
+      width: 10vw;
+      height: 10vw;
+
+      .sun-header {
+        font-size: 6vw;
+        right: 55%;
+        top: 2vw;
+      }
+    }
+  }
+
+  p {
+    font-size: 5.5vw;
+    padding-left: 10%;
+    padding-right: 20%;
+    padding-top: 0;
+  }
+
+  p.text1 {
+    margin-top: 15%;
+    margin-right: 0;
+    z-index: 1;
+    position: relative;
+    text-align: left;
+  }
+
+  p.text2,
+  p.text3 {
+    text-align: right;
+    padding-right: 10%;
+    padding-left: 20%;
+    z-index: 1;
+    position: relative;
+  }
+
+  img.nanoyeast {
+    width: 95%;
+    margin: 5% 2.5%;
+    z-index: 2;
+  }
+
+  img.discoyeast {
+    position: relative;
+    z-index: 2;
+  }
+
+  img.lipid,
+  img.lipid2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 768px) {
+    // width: 45%;
+    p {
+      font-size: 2.5vw;
+    }
+
+    p.text1 {
+      padding: 0;
+      padding-left: 5%;
+      margin-top: 0;
+      padding-bottom: 6%;
+      width: 47%;
+      text-align: right;
+      padding-left: 5%;
+      float: left;
+    }
+
+    img.nanoyeast {
+      width: 42%;
+      margin: 0;
+      padding-top: 10%;
+      // padding-left: 3%;
+      margin-left: 3%;
+      z-index: 2;
+    }
+
+    img.discoyeast {
+      position: relative;
+      z-index: 2;
+      float: right;
+      margin-top: -6%;
+    }
+
+    p.text2 {
+      width: 47%;
+      text-align: left;
+      padding: 0;
+      padding-right: 5%;
+      float: right;
+      margin-top: 14%;
+    }
+
+    img.lipid {
+      width: 27%;
+      margin-left: 20%;
+      margin-right: -5%;
+      margin-top: 15%;
+    }
+
+    p.text3 {
+      width: 47%;
+      padding: 0;
+      padding-left: 5%;
+      text-align: right;
+      float: left;
+      margin-bottom: 10%;
+    }
+
+    img.lipid2 {
+      width: 48%;
+      // margin-top: -10%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .centralizer {
+      width: 80vw;
+    }
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .centralizer {
+      width: 60vw;
+
+      p {
+        font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////
+// SECTION 3  ///////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.home-section-3-bg {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.home-section-3 {
+  // position: absolute;
+  // top: 300vh;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  left: 0;
+  // background-color: white;
+
+  h1 {
+    color: #68cbdc;
+    text-align: center;
+    padding-top: 15%;
+  }
+
+  h3 {
+    color: #3a93ae;
+    font-size: 150%;
+    text-align: center;
+    padding: 5% 8% 8%;
+  }
+
+  .container-sm {
+    margin-bottom: 15%;
+  }
+
+  .customcircle {
+    display: block;
+    /* position: relative; */
+    z-index: 3;
+    border-radius: 50%;
+    // background-color: #3a93ae;
+    border-style: solid;
+    border-width: 0.25vw;
+    border-color: #3a93ae;
+    // margin: 50px auto;
+    h3 {
+      font-size: 9vw;
+      font-weight: bolder;
+      padding-top: 0;
+    }
+
+    &:hover {
+      svg.midgear {
+        animation: rot 8s linear infinite;
+      }
+
+      svg.small {
+        animation: rotsmall 4s linear infinite;
+      }
+
+      @keyframes rot {
+        0% {
+          -webkit-transform: rotate(22deg);
+        }
+        100% {
+          -webkit-transform: rotate(382deg);
+        }
+      }
+
+      @keyframes rotsmall {
+        0% {
+          -webkit-transform: scale(0.7) rotate(382deg);
+        }
+
+        100% {
+          -webkit-transform: scale(0.7) rotate(22deg);
+        }
+      }
+
+      // lab works
+    }
+  }
+
+  .customcircle.yellow {
+    border-color: #f9d53e;
+
+    h3 {
+      color: #f9d53e;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .customcircle {
+      height: 70vw;
+      width: 70vw;
+      margin: auto;
+      margin-bottom: 5%;
+    }
+  }
+
+  // desktop
+  @media only screen and (min-width: 600px) {
+    // height: 100vh;
+
+    .customcircle {
+      margin-bottom: 10vw;
+    }
+
+    .container-sm {
+      max-width: 100%;
+    }
+
+    .p-2 {
+      display: flex;
+      justify-content: center;
+    }
+
+    h1 {
+      padding-top: 5%;
+      font-size: 7vw;
+    }
+
+    h3 {
+      font-size: 2vw;
+      padding: 2% 17% 5% 17%;
+      margin-bottom: 5%;
+    }
+
+    .customcircle {
+      height: 25vw;
+      width: 25vw;
+      h3 {
+        font-size: 3.5vw;
+        font-weight: bolder;
+        padding-top: 0;
+      }
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    width: 64vw;
+    margin-left: 18vw;
+    margin-right: 18vw;
+
+    h1 {
+      padding-top: 5%;
+      font-size: 5vw;
+    }
+
+    h3 {
+      font-size: 1.5vw;
+      padding: 2% 17% 5% 17%;
+      margin-bottom: 5%;
+    }
+
+    .customcircle {
+      height: 15vw;
+      width: 15vw;
+      h3 {
+        font-size: 2vw;
+        font-weight: bolder;
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////
+// SECTION 4  ///////////////////////////////////////
+/////////////////////////////////////////////////////
+
+.home-section-4 {
+  // position: absolute;
+  // top: 520vh;
+  // height: 100vh;
+  width: 100%;
+  left: 0;
+  background-color: #f0f7f2;
+  z-index: 3;
+  position: relative;
+
+  .makesthe {
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: 220%;
+    color: #3a93ae;
+    font-weight: bold;
+  }
+
+  #dreamwork {
+    font-family: 'HelloSanttiny';
+    font-size: 450%;
+    color: #67cbdb;
+    margin-top: -10%;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .read {
+    background-color: #ffd622;
+    color: black;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 15%;
+    width: 60%;
+    // margin-right: 5%;
+    // width: 25%;
+    // margin: 5% 20% 0 20%;
+    // height: 30%;
+    border-color: #ffd622;
+  }
+
+  .imgdiv {
+    background-color: #f0f7f2;
+
+    .brush {
+      position: relative;
+      top: -6vw;
+    }
+
+    /* Top left text */
+    h1 {
+      color: #0092b0;
+      position: relative;
+      top: 16vw;
+      // left: 14vw;
+      padding-left: 15%;
+      font-size: 15vw;
+      z-index: 2;
+      margin-bottom: 0;
+
+      user-select: none;
+    }
+
+    .teampic {
+      margin-top: -20%;
+      margin-bottom: 15%;
+    }
+  }
+
+  .item {
+    margin-top: -10%;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .imgdiv {
+      margin-left: 7%;
+      padding-bottom: 15%;
+      flex: 2;
+
+      .brush {
+        max-width: 60%;
+        top: -3vw;
+        margin-left: 4.5%;
+      }
+
+      h1 {
+        font-size: 6vw;
+        top: 6vw;
+        padding-left: 12%;
+        width: 40%;
+      }
+
+      .teampic {
+        // max-width: 65%;
+        margin-top: -8%;
+        margin-left: 0;
+        margin-bottom: 0;
+        width: 65vw;
+      }
+    }
+
+    .read {
+      background-color: #ffd622;
+      color: black;
+      // margin-right: 5%;
+      // width: 25%;
+      margin: 5% 20% 0 20%;
+      // height: 30%;
+      border-color: #ffd622;
+    }
+
+    .makesthe {
+      justify-content: center;
+      justify-self: center;
+      align-self: center;
+
+      font-size: 2.5vw;
+      color: #3a93ae;
+      font-weight: bolder;
+    }
+
+    #dreamwork {
+      font-family: 'dreamwork' !important;
+      font-size: 6vw;
+      color: #67cbdb;
+      justify-content: center;
+      justify-self: center;
+      align-self: center;
+      margin-top: -10%;
+    }
+
+    .cont {
+      display: flex;
+      flex-direction: row;
+      background-color: #f0f7f2;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 100%;
+      flex: 1;
+      align-content: center;
+      justify-content: center;
+
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .teampic {
+      width: 60vw;
+    }
+
+    .imgdiv {
+      h1 {
+        width: 100%;
+      }
+    }
+
+    #dreamwork {
+      width: 100%;
+    }
+  }
+}

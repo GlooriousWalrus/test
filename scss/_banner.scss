@@ -7,6 +7,7 @@
   // );
   display: block;
   background: #008c93;
+  margin-top: -1rem !important;
 
   h1 {
     font-family: 'Lobster' !important;
@@ -21,41 +22,57 @@
   canvas {
     display: block;
   }
+}
 
-  @media only screen and (orientation: portrait) {
-  }
+@media only screen and (orientation: portrait) {
+}
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+  .banner {
     height: 43vw;
 
     h1 {
-      top: 23vw;
+      top: 15vw;
+    }
+
+    &.partsbanner {
+      h1 {
+        left: 41vw;
+      }
+    }
+
+    &.implementationbanner {
+      h1 {
+        left: 23.4vw;
+      }
+    }
+
+    &.modelingbanner {
+      h1 {
+        left: 34vw;
+      }
+    }
+
+    &.descriptionbanner {
+      h1 {
+        left: 31vw;
+      }
+    }
+
+    &.collaborationsbanner {
+      h1 {
+        left: 26vw;
+      }
     }
   }
+}
 
-  @media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
+  .banner {
     height: 25vw;
 
     h1 {
-      top: 9vw;
-    }
-  }
-
-  &.descriptionbanner {
-    h1 {
-      left: 30vw;
-    }
-  }
-
-  &.partsbanner {
-    h1 {
-      left: 41vw;
-    }
-  }
-
-  &.modelingbanner {
-    h1 {
-      left: 34vw;
+      top: 4vw;
     }
   }
 }

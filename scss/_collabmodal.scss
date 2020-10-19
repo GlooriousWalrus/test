@@ -24,8 +24,8 @@
   }
 
   .modal-header {
-    font-family: 'Lobster';
-    color: #00c4cd;
+    font-family: 'Lobster' !important;
+    color: #00c4cd !important;
     padding-bottom: unset;
 
     border-bottom: unset;
@@ -55,7 +55,8 @@
     margin-right: 15%;
 
     .modal-title {
-      font-family: 'Lobster';
+      color: #00666b !important;
+      font-family: 'Lobster' !important;
       padding-top: 1.5vw;
       padding-bottom: 4vw;
       font-size: 5vw;
