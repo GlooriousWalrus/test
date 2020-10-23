@@ -5,17 +5,23 @@
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: start;
+    justify-content: center;
+    margin-right: 25vw;
   }
   .introduction {
     font-size: 5vw;
     color: #0092ac;
-    position: absolute;
-    transform: translateY(80%) rotate(-90deg);
-    display: inline-block;
     margin-bottom: 0;
-    padding-bottom: 1vw;
     border-bottom: 1px solid #0092ac;
+    margin-bottom: 5vw;
+  }
+  .introcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transform: rotate(-90deg);
+    // margin-bottom: 5vw;
   }
   .collabtext {
     font-family: Muli;
@@ -23,31 +29,29 @@
     font-style: italic;
     text-align: justify;
     color: #0092ac;
-    // font-weight: bolder;
-    // flex-grow: 6;
-    width: 55%;
-    margin-left: 20vw;
+    width: 60vw;
   }
 }
 @media all and (min-width: 768px) {
   .implementation {
-    .introduction {
-      margin-left: 5vw;
-    }
-    .collabtext {
-      margin-left: 25vw;
-    }
+    // .introduction {
+    //   margin-left: 5vw;
+    // }
+    // .collabtext {
+    //   margin-left: 25vw;
+    // }
   }
 }
 
 @media all and (min-width: 1024px) {
   .generic-section {
     .introduction {
-      font-size: 2.5vw;
-      margin-left: 15vw;
+      font-size: 3vw;
+      margin-bottom: 3vw;
     }
     .collabtext {
       font-size: 1.5vw;
+      width: 50vw;
     }
   }
 }
