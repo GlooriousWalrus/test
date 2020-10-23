@@ -20,20 +20,35 @@
   .collabtext {
     font-family: Muli;
     font-size: 2vw;
+    font-style: italic;
+    text-align: justify;
     color: #0092ac;
-    font-weight: bolder;
+    // font-weight: bolder;
     // flex-grow: 6;
-    width: 60%;
+    width: 55%;
     margin-left: 20vw;
   }
 }
-
-.implementation {
-  .introduction {
-    margin-left: 5vw;
+@media all and (min-width: 768px) {
+  .implementation {
+    .introduction {
+      margin-left: 5vw;
+    }
+    .collabtext {
+      margin-left: 25vw;
+    }
   }
-  .collabtext {
-    margin-left: 25vw;
+}
+
+@media all and (min-width: 1024px) {
+  .generic-section {
+    .introduction {
+      font-size: 2.5vw;
+      margin-left: 15vw;
+    }
+    .collabtext {
+      font-size: 1.5vw;
+    }
   }
 }
 
@@ -58,10 +73,12 @@
     }
     p {
       font-family: 'Muli';
+      font-style: italic;
       font-size: 2vw;
       margin-left: 14%;
       margin-right: 22%;
       color: #008c93;
+      font-weight: normal;
     }
   }
   .public {
@@ -83,21 +100,23 @@
     }
     p {
       font-family: 'Muli';
+      font-style: italic;
       font-size: 2vw;
       margin-left: 22%;
       margin-right: 14%;
       color: white;
+      font-weight: normal;
     }
   }
   .question {
     position: absolute;
     width: 20vw;
     left: 40vw;
-    margin-top: 17vw;
+    margin-top: 24vw;
   }
   .pill-button {
     margin-top: 2vw;
-    margin-left: 25%;
+    margin-left: 12vw;
     background-color: #008c93;
     border-radius: 5vw;
     padding-left: 3vw;
@@ -107,21 +126,25 @@
     color: white;
     margin-bottom: 10vw;
   }
+
   .whitebtn {
     background-color: white;
     color: #008c93;
+    margin-left: 15vw;
   }
 }
 
 .implementation-section3 {
   .mansvg {
-    margin-top: 5vw;
+    margin-top: 9.5vw;
     margin-left: 10vw;
     width: 30vw;
   }
   .impltext {
     font-family: Muli;
     font-size: 2vw;
+    font-style: italic;
+    font-weight: normal !important;
     color: #0092ac;
     font-weight: bolder;
     width: 50%;
@@ -129,6 +152,8 @@
 
     h1 {
       color: #0092ac;
+      font-style: italic !important;
+      font-weight: normal;
       font-size: 5.5vw;
       margin-bottom: 2vw;
       margin-top: 2.5vw;
@@ -136,7 +161,7 @@
   }
   .pill-button {
     margin-top: 2vw;
-    margin-left: 25%;
+    margin-left: 20%;
     background-color: #008c93;
     border-radius: 5vw;
     padding-left: 3vw;
@@ -145,5 +170,69 @@
     font-size: 3vw;
     color: white;
     // margin-bottom: 10vw;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .generic-section {
+    padding-bottom: 5vw;
+  }
+  .implementation-section2 {
+    height: 50vw;
+    .comm,
+    .public {
+      h3 {
+        font-size: 2.5vw;
+        margin-top: 6vw;
+        margin-bottom: 1.5vw;
+        margin-top: 4vw;
+        padding-bottom: 1.5vw;
+      }
+      p {
+        font-size: 1.5vw;
+      }
+    }
+
+    .pill-button {
+      font-size: 2vw;
+    }
+
+    .whitebtn {
+      // margin-left: 20vw;
+    }
+
+    .question {
+      margin-top: 10vw;
+    }
+  }
+
+  .implementation-section3 {
+    padding-bottom: 5vw;
+    padding-top: 0vw;
+
+    .impltext {
+      font-weight: normal;
+      font-size: 1.5vw;
+      width: 42%;
+
+      h1 {
+        font-weight: normal;
+        font-size: 3vw;
+        padding-right: 20vw;
+      }
+    }
+
+    .mansvg {
+      width: 20vw;
+      margin-top: 6vw;
+    }
+
+    .pill-button {
+      display: block;
+      font-size: 2vw;
+      margin-top: 3vw;
+      margin-left: 8vw;
+      margin-bottom: 0vw;
+    }
   }
 }

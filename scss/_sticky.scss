@@ -7,6 +7,11 @@
 
   ul {
     padding-top: 10vw;
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 2vw;
+    line-height: 4vw;
+    list-style-image: unset;
 
     li {
       font-family: 'Lobster';
@@ -38,6 +43,18 @@
           color: #00c7d2;
           text-decoration: unset;
         }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .stickybar {
+    ul {
+      li {
+        font-size: 2vw;
+        line-height: 2vw;
+        width: 10vw;
       }
     }
   }

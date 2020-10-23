@@ -45,7 +45,7 @@ $body-bg: #f5f5f5;
 @import 'bootstrap/scss/buttons';
 @import 'bootstrap/scss/transitions';
 @import 'bootstrap/scss/dropdown';
-// @import "bootstrap/scss/button-group";
+@import 'bootstrap/scss/button-group';
 // @import "bootstrap/scss/input-group"; // Requires forms
 @import 'bootstrap/scss/custom-forms';
 @import 'bootstrap/scss/nav';
@@ -64,7 +64,7 @@ $body-bg: #f5f5f5;
 @import 'bootstrap/scss/modal'; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
+@import 'bootstrap/scss/carousel';
 // @import "bootstrap/scss/spinners";
 @import 'bootstrap/scss/utilities';
 // @import "bootstrap/scss/print";

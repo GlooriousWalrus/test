@@ -2,6 +2,12 @@
   background-color: #ffffff;
   padding-bottom: 3vw;
 
+  display: flex;
+  flex-direction: column;
+  padding-left: 25vw;
+  justify-content: center;
+  align-items: center;
+
   p {
     font-family: 'Muli';
     font-size: 2vw;
@@ -10,24 +16,64 @@
     width: 57vw;
     text-align: justify;
 
-    margin-left: 30vw;
     padding-top: 2vw;
+  }
+
+  .collapsetext {
+    padding: 0;
+  }
+
+  .section-header {
+    margin-top: 2vw;
+    color: #0092b0;
+    font-size: 5vw;
+    text-decoration: underline;
+    text-decoration-color: #0092b0;
+    text-decoration-style: solid;
+    text-underline-offset: 2vw;
+    padding-bottom: 1vw;
+    text-align: center;
+  }
+
+  .top-button-bar {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+    padding-top: 5vw;
+
+    .pill-button {
+      margin: 0;
+      background-color: #0092b0;
+
+      &.active {
+        background-color: #00c5d0;
+      }
+    }
   }
 
   .pill-button {
     margin-top: 2vw;
-    margin-left: 48vw;
-    background-color: #0092ac;
+    background-color: #00c5d0;
     border-radius: 5vw;
     padding-left: 3vw;
     padding-right: 3vw;
     font-family: 'Muli';
-    font-size: 3vw;
+    font-size: 2.5vw;
     color: white;
+    transition-duration: 0.3s;
+  }
+
+  .pill-button:hover {
+    background-color: #00c5d0;
+  }
+
+  .collapsed {
+    background-color: #008c96;
+    content: 'Read more';
   }
 
   .image-placeholder {
-    margin-left: 30vw;
     margin-top: 6vw;
 
     border-radius: 5vw;
@@ -44,29 +90,40 @@
   }
 
   h1 {
-    margin-left: 30vw;
     padding-top: 2vw;
     width: 57vw;
     font-size: 3vw;
-  }
-
-  .desc-text-1 {
-    padding-top: 10vw;
-  }
-
-  .first-p {
-    padding-top: 10vw;
   }
 }
 
 .section2 {
   background-color: #004c57;
 
+  .section-header {
+    color: white;
+    text-decoration-color: white;
+  }
+
   p {
     color: white;
   }
+}
 
-  // .first-p {
-  //   padding-top: 10vw;
-  // }
+@media only screen and (min-width: 1024px) {
+  .descriptionsection {
+    padding-left: 10vw;
+
+    .pill-button {
+      font-size: 1.3vw;
+    }
+
+    .section-header {
+      font-size: 4vw;
+    }
+
+    p {
+      font-size: 1.35vw;
+      font-style: normal;
+    }
+  }
 }

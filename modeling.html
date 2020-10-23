@@ -94,7 +94,7 @@
     <script type=module src="assets/js/stickybar.js"></script>
     <!-- Sticky sidebar -->
     <div class="stickybar" id="stickyelm">
-        <ul id="list">
+        <ul>
             <li><a href="#lipids">Lipids</a></li>
             <li><a href="#cerevisiae">S.cerevisiae</a></li>
             <li><a href="#ppp">PPP</a></li>
@@ -103,13 +103,24 @@
     </div>
     <!-- Description sections -->
     <section class="descriptionsection" id="lipids">
+        <div class="btn-group btn-group-toggle top-button-bar" data-toggle="buttons">
+          <label class="btn pill-button">
+            <input type="radio" name="options" id="option2"> Description
+          </label>
+          <label class="btn pill-button">
+            <input type="radio" name="options" id="option3"> Inspiration
+          </label>
+        </div>
+
+        <h2 class="section-header">Lipids</h2>
+
         <p class="desc-text-1">
             Lipids are essential units and building-blocks of cellular membranes with several other biological
             roles within the cell. They serve the cell as energy storehouses and they also act as significant
             signaling molecules (Olzmann &amp; Carvalho, 2019). 
         </p>
         <p>
-            Neutral lipids are known as a subgroup of lipids consisting of hydrophobic molecules lacking charged groups. Triacylglycerols (TAGs) and
+            Neutral lipids are known as a subgroup of lipids consisting of hydrophobic molecules lacking charged groups. Triacylglycerols (<b>TAGs</b>) and
             sterol esters (SE) represent the major part of neutral lipids that are stored in lipid droplets (LDs).
             LDs are highly influential and dynamic storage organelles emerging from the endoplasmic
             reticulum (ER), an organelle with which lipid droplets hold a connection during their life cycle.
@@ -120,16 +131,23 @@
             membrane contact sites with other cellular organelles, such as Golgi or mitochondria, facilitating
             the exchange of lipids, ions and metabolites. (Athenstaedt, 2010)
         </p>
-        <button type="button" class="btn pill-button">
-          Read more
+        <p class="collapse collapsetext" id="viewdetails">
+          Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+        </p>
+        
+        <button type="button" data-toggle="collapse" data-target="#viewdetails" class="btn pill-button collapsed"  aria-pressed="false">
+          Hide
         </button>
 
-        <!-- <img src="..." class="img-fluid" alt="Responsive image"> -->
-        <div class="image-placeholder">
+        <img src="assets/img/random.jpeg" class="img-fluid image-placeholder" alt="Responsive image">
+        <!-- <div class="image-placeholder">
           <h4>image placeholder text</h4>
-        </div>
+        </div> -->
     </section>
     <section class="descriptionsection section2" id="cerevisiae">
+
+        <h1 class="section-header">S.cerevisae</h1>
+
         <p class="first-p">
             For LD production, we decided to use Saccharomyces cerevisiae as we thought it is a well
             experimented organism. Unlike other species of yeast, Saccharomyces cerevisiae has a low
@@ -148,12 +166,13 @@
             tractable (Ma et al., 2018) .
         </p>
     </section>
-    <section class="descriptionsection" id="PPP">
+    <section class="descriptionsection" id="ppp">
+    <h1 class="section-header">Push, Pull and Protect</h1>
       <p class="first-p">
-        We have taken our inspiration from a strategy that has successfully worked in plants: “Push, Pull
-        and Protect”. It involves optimizing the flux of carbon into TAG (storage form of lipids) by
-        engineering of lipid-synthesizing enzymes to increase the fatty acid synthesis (Push), increasing
-        TAG assembly (Pull) and downregulating lipid turnover (Protect). (Vanhercke et al., 2014)
+      We have taken our inspiration from a strategy that has successfully worked in plants: “Push, Pull
+      and Protect”. It involves optimizing the flux of carbon into TAG (storage form of lipids) by
+      engineering of lipid-synthesizing enzymes to increase the fatty acid synthesis (Push), increasing
+      TAG assembly (Pull) and downregulating lipid turnover (Protect). (Vanhercke et al., 2014)
     </p>
     <p>
       Fatty acid biosynthesis takes place mainly in the cytosol in a series of reactions that convert the

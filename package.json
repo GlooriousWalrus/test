@@ -35,7 +35,8 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "popper.js": "1.16.1-lts",
-    "tsparticles": "^1.18.4"
+    "tsparticles": "^1.18.4",
+    "two.js": "^0.7.0-stable.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",

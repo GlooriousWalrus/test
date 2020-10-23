@@ -1,21 +1,17 @@
 .banner {
-  // background-color: #3a93ae;
-  // background: linear-gradient(
-  //   180deg,
-  //   rgba(58, 147, 174, 1) 20%,
-  //   rgba(0, 79, 87, 1) 30%
-  // );
   display: block;
   background: #008c93;
   margin-top: -1rem !important;
+  display: flex;
+  align-content: center;
 
   h1 {
     font-family: 'Lobster' !important;
     position: absolute;
     font-size: 8.5vw;
     top: 15vw;
-    left: 20vw;
-    margin: 0;
+    width: 100vw;
+    text-align: center;
     user-select: none;
   }
 
@@ -34,45 +30,16 @@
     h1 {
       top: 15vw;
     }
-
-    &.partsbanner {
-      h1 {
-        left: 41vw;
-      }
-    }
-
-    &.implementationbanner {
-      h1 {
-        left: 23.4vw;
-      }
-    }
-
-    &.modelingbanner {
-      h1 {
-        left: 34vw;
-      }
-    }
-
-    &.descriptionbanner {
-      h1 {
-        left: 31vw;
-      }
-    }
-
-    &.collaborationsbanner {
-      h1 {
-        left: 26vw;
-      }
-    }
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .banner {
-    height: 25vw;
+    height: 20vw;
 
     h1 {
-      top: 4vw;
+      top: 5vw;
+      font-size: 6vw;
     }
   }
 }

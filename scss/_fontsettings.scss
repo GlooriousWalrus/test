@@ -8,15 +8,8 @@
 @font-face {
   font-family: 'Muli';
   src: url('https://2020.igem.org/wiki/images/9/91/T--Estonia_TUIT--muli.woff')
-      format('woff'),
+      format('woff2'),
     url('muli.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'dreamwork';
-  src: url('https://2020.igem.org/wiki/images/8/86/T--Estonia_TUIT--hellosanttiny.woff')
-      format('woff'),
-    url('hellosanttiny.woff'), format('woff');
 }
 
 h1,
@@ -29,7 +22,6 @@ h2 {
 p {
   font-family: 'Muli' !important;
   // font-style: italic;
-  font-weight: bold;
   color: white;
   // letter-spacing: 1px;
   margin-bottom: 0;
