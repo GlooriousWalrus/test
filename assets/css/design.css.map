@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "design.css",
+	"sources": [
+		"../../scss/design.scss"
+	],
+	"sourcesContent": [
+		".genericsection {\n  .carouselcontainer {\n    display: flex;\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AACE,eADa,CACb,kBAAkB,AAAC,CACjB,OAAO,CAAE,IAAI,CACd"
+}

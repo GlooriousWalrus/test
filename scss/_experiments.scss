@@ -1,0 +1,262 @@
+.carouselsection {
+  height: 1vw;
+  z-index: 99;
+  // background-color: green;
+
+  .carouselcontainer {
+    background-color: transparent;
+  }
+
+  .carousel-indicators {
+    li {
+      p {
+        font-size: 1.75vw;
+      }
+    }
+    width: 70vw;
+    margin-left: -10vw;
+
+    li:nth-child(n + 10) {
+      p {
+        text-indent: 5%;
+      }
+    }
+  }
+
+  .carousel-item {
+    margin-top: 12vw;
+  }
+
+  .exp-recipe-container {
+    // margin-top: 10vw;
+    //   position: absolute;
+    //   width: 60%;
+    //   height: 70%;
+    //   z-index: 3;
+    //   // top: 96vw;
+    //   // left: 27vw;
+    //   margin-left: 15%;
+    //   margin-top: -73%;
+    //   // padding: 2vw 3vw;
+
+    .exp-ol {
+      li {
+        color: black;
+        font-size: 1.5vw;
+      }
+    }
+
+    .exp-recipe-header {
+      font-family: 'Muli';
+      font-size: 1.75vw;
+      color: #00c5d0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    //   .header2 {
+    //     margin-top: 50%;
+    //     font-size: 2vw;
+    //   }
+
+    .exp-recipe-image {
+      // width: 56%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      // height: 60%;
+      table {
+        width: 50%;
+        height: 45%;
+        margin-right: 2%;
+        // margin-left: 10%;
+        border: 3px solid #00c7cf;
+        border-top-left-radius: 3vw;
+        border-top-right-radius: 3vw;
+        border-bottom-left-radius: 3vw;
+        border-bottom-right-radius: 3vw;
+        // width: 70vw;
+        // margin-left: 15vw;
+        // margin-right: 15vw;
+      }
+
+      thead {
+        tr {
+          background-color: #00c7cf;
+          border-top: 3px solid #00c7cf;
+          th {
+            // padding-bottom: 2.5vw;
+            // padding-top: 2vw;
+            padding: 0;
+            font-size: 1.25vw;
+            font-family: 'Muli';
+            text-align: center;
+            color: white;
+          }
+        }
+      }
+
+      .table2 {
+        width: 43%;
+        // margin-left: 20%;
+        margin-top: -2%;
+
+        float: right;
+      }
+
+      .table3 {
+        margin-top: 2%;
+      }
+
+      .table4 {
+        width: 45%;
+      }
+
+      .table5 {
+        width: 80%;
+        height: 30%;
+      }
+
+      tbody {
+        font-family: 'Muli';
+        background-color: #f0f0f0;
+        font-size: 1.25vw;
+
+        td {
+          text-align: center;
+          color: black;
+        }
+      }
+    }
+
+    //   .exp-recipe-ingridients-tag {
+    //     width: 40%;
+    //     position: absolute;
+    //     margin-left: 60%;
+    //     margin-top: -2%;
+    //     // left: 23vw;
+    //     // top: 7vw;
+    //   }
+
+    //   .exp-recipe-ingridients-list {
+    //     position: absolute;
+    //     font-size: 1.25vw;
+    //     margin-top: 4vw;
+    //     margin-left: 60%;
+
+    //     li {
+    //       color: #00c5d0;
+    //     }
+    //   }
+
+    .exp-recipe-paragraph {
+      color: black;
+      font-family: 'Muli' !important;
+      font-size: 1.5vw;
+      text-align: justify;
+    }
+
+    b {
+      color: #00c5d0;
+    }
+  }
+}
+
+.experiments-section {
+  height: 90vw;
+  margin-top: 3vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+
+  .exp-bg {
+    width: 90vw;
+  }
+
+  .exp-molecule1 {
+    position: absolute;
+    width: 15%;
+    z-index: 3;
+    // top: 80vw;
+    // left: 17vw;
+    margin-left: 3%;
+    margin-top: -78%;
+  }
+
+  .exp-penpaper {
+    position: absolute;
+    z-index: 0;
+    // top: 92vw;
+    // left: 25vw;
+    margin-top: -80%;
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .exp-flasks {
+    position: absolute;
+    width: 13%;
+    z-index: 3;
+    // top: 90vw;
+    // left: 72vw;
+    margin-left: 80%;
+    margin-top: -75%;
+  }
+
+  .exp-molecule2 {
+    position: absolute;
+    width: 17%;
+    z-index: 3;
+    // top: 128vw;
+    // left: 69vw;
+    margin-top: -20%;
+    margin-left: 75%;
+    transform: rotate(-75deg);
+  }
+
+  .exp-molecule3 {
+    position: absolute;
+    width: 10%;
+    z-index: 2;
+    // top: 79vw;
+    // left: 52vw;
+    margin-top: -80%;
+    margin-left: 70%;
+    transform: rotate(-35deg);
+  }
+
+  .carouselcontainer {
+    // position: absolute;
+    // top: -100vh;
+    margin-bottom: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .experiments-section {
+    .exp-recipe-container {
+      .exp-recipe-paragraph {
+        // color: #0092ac;
+        margin-bottom: 0;
+      }
+      .exp-recipe-image {
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .experiments-section {
+    .exp-recipe-container {
+      .exp-recipe-paragraph {
+        font-size: 1.5vw;
+      }
+
+      .exp-ol {
+        li {
+          font-size: 2vw;
+        }
+      }
+    }
+  }
+}

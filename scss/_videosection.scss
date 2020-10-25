@@ -1,0 +1,51 @@
+.videosection {
+  background-color: white;
+  //   height: 60vh;
+  //   width: 90vw;
+
+  .imgcontainer {
+    position: relative;
+    overflow: hidden;
+    width: 70vw;
+    left: 29%;
+    top: -5vw;
+
+    .videoheader {
+      position: relative;
+      top: 11vw;
+      z-index: 2;
+      left: 15vw;
+      font-size: 4vw;
+    }
+
+    .videodots1 {
+      position: relative;
+      left: 10%;
+    }
+  }
+
+  .thankyou {
+    position: relative;
+    width: 70vw;
+    top: -8vw;
+    left: 15vw;
+  }
+
+  .videocontainer {
+    position: relative;
+    top: -58vw;
+    left: 15vw;
+  }
+
+  .video-js {
+    width: 66vw;
+    border-radius: 2vw;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  /* This appears to be needed because the control bar (or its contents) will otherwise break out of the player. */
+  .video-js .vjs-control-bar {
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+  }
+}

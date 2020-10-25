@@ -8,12 +8,6 @@
 
 html {
   scroll-behavior: smooth;
-
-  .body {
-    p {
-      margin-bottom: 0;
-    }
-  }
 }
 
 //
@@ -94,3 +88,19 @@ $body-bg: #f5f5f5;
 
 // home
 @import 'home.scss';
+
+//videos
+@import 'videosection.scss';
+
+//experiments
+@import 'experiments.scss';
+
+//design
+@import 'design.scss';
+
+//global list
+
+@import 'listglobal.scss';
+
+//human practices
+@import 'humanpractices.scss';

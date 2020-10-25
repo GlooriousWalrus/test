@@ -2,11 +2,12 @@
   background-color: #ffffff;
   padding-bottom: 10vw;
   padding-top: 5vw;
+
   .flex-container {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-right: 25vw;
+    margin-right: 15vw;
   }
   .introduction {
     font-size: 5vw;
@@ -14,6 +15,10 @@
     margin-bottom: 0;
     border-bottom: 1px solid #0092ac;
     margin-bottom: 5vw;
+
+    &.overview {
+      font-size: 5.5vw;
+    }
   }
   .introcontainer {
     display: flex;
@@ -57,11 +62,10 @@
 }
 
 .implementation-section2 {
-  height: 80vw;
+  display: flex;
+
   .comm {
-    height: inherit;
     width: 50%;
-    float: left;
     background-color: #ecf7f4;
     h3 {
       font-family: 'Muli';
@@ -79,16 +83,27 @@
       font-family: 'Muli';
       font-style: italic;
       font-size: 2vw;
-      margin-left: 14%;
+      margin-left: 13%;
       margin-right: 22%;
       color: #008c93;
       font-weight: normal;
     }
+
+    .impl-list {
+      font-family: 'Muli';
+      font-style: italic;
+      font-size: 1.5vw;
+      margin-top: 2vw;
+      margin-left: 18%;
+      margin-right: 22%;
+      color: #008c93;
+      font-weight: normal;
+      list-style-type: disc;
+      list-style-image: unset !important;
+    }
   }
   .public {
-    height: inherit;
     width: 50%;
-    float: right;
     background-color: #008c93;
     h3 {
       font-family: 'Muli';
@@ -116,7 +131,7 @@
     position: absolute;
     width: 20vw;
     left: 40vw;
-    margin-top: 24vw;
+    margin-top: 20vw;
   }
   .pill-button {
     margin-top: 2vw;
@@ -139,28 +154,89 @@
 }
 
 .implementation-section3 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  background-color: white;
+  align-items: center;
+
+  h2 {
+    margin-top: 5vw;
+    font-size: 4vw;
+    color: #0092ac;
+    text-align: center;
+    margin-bottom: 3vw;
+  }
+
+  p {
+    color: #0092ac;
+    font-size: 2vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+
+  .pill-button {
+    margin-top: 2vw;
+    // margin-left: 12vw;
+    background-color: #008c93;
+    border-radius: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    font-family: 'Muli';
+    font-size: 3vw;
+    width: 30vw;
+    color: white;
+    margin-bottom: 10vw;
+  }
+}
+
+.implementation-section4 {
   .mansvg {
     margin-top: 9.5vw;
     margin-left: 10vw;
     width: 30vw;
   }
   .impltext {
-    font-family: Muli;
-    font-size: 2vw;
-    font-style: italic;
-    font-weight: normal !important;
-    color: #0092ac;
-    font-weight: bolder;
     width: 50%;
     margin-left: 5vw;
 
-    h1 {
+    p {
+      font-family: Muli;
+      font-size: 2vw;
+      font-style: italic;
+      font-weight: normal !important;
       color: #0092ac;
-      font-style: italic !important;
+    }
+
+    ul {
+      font-family: Muli;
+      font-size: 2vw;
+      font-style: italic;
+      font-weight: normal !important;
+      color: #0092ac;
+      list-style-type: disc;
+      list-style-image: unset !important;
+    }
+
+    .impl-list {
+      font-family: 'Muli';
+      font-style: italic;
+      font-size: 2vw;
+      color: #008c93;
+      font-weight: normal;
+      list-style-type: disc;
+      list-style-image: unset;
+      margin-left: 7vw;
+    }
+
+    h2 {
+      color: #0092ac;
+      font-style: normal;
       font-weight: normal;
       font-size: 5.5vw;
       margin-bottom: 2vw;
-      margin-top: 2.5vw;
+      margin-top: 5vw;
     }
   }
   .pill-button {
@@ -182,7 +258,7 @@
     padding-bottom: 5vw;
   }
   .implementation-section2 {
-    height: 50vw;
+    // height: 50vw;
     .comm,
     .public {
       h3 {
@@ -206,11 +282,28 @@
     }
 
     .question {
-      margin-top: 10vw;
+      margin-top: 6vw;
     }
   }
 
   .implementation-section3 {
+    h2 {
+      font-size: 3vw;
+    }
+
+    p {
+      font-size: 1.5vw;
+    }
+
+    .pill-button {
+      margin-top: 2vw;
+      background-color: #008c93;
+      font-size: 2vw;
+      margin-bottom: 2vw;
+    }
+  }
+
+  .implementation-section4 {
     padding-bottom: 5vw;
     padding-top: 0vw;
 
@@ -219,10 +312,34 @@
       font-size: 1.5vw;
       width: 42%;
 
-      h1 {
+      p {
         font-weight: normal;
+        font-size: 1.5vw;
+      }
+
+      ul {
+        font-size: 1.5vw;
+      }
+
+      .impl-list {
+        font-family: 'Muli';
+        font-style: italic;
+        font-size: 1.5vw;
+        margin-top: 2vw;
+        color: #008c93;
+        font-weight: normal;
+        list-style-type: disc;
+        list-style-image: unset !important;
+      }
+
+      h2 {
+        margin-top: 8vw;
+        margin-bottom: 3vw;
+        font-weight: normal;
+        font-style: normal;
         font-size: 3vw;
         padding-right: 20vw;
+        color: #0092ac;
       }
     }
 

@@ -1,0 +1,46 @@
+.fixedparticles {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+}
+
+.generic-section.humanpract {
+  position: relative;
+  z-index: 4;
+}
+
+.humanpractice-section {
+  height: 300vw;
+  background: linear-gradient(45deg, #008c96 0%, #0092b0 100%);
+  display: flex;
+  justify-content: center;
+
+  .lolkek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 50vw;
+
+    .integrated-sun {
+      border-radius: 50%;
+      width: 16vw;
+      height: 16vw;
+      background-color: white;
+
+      .integrated-sun-header {
+        font-size: 6vw;
+        color: #008c96;
+        text-shadow: 2px 2px 4px white;
+        margin-left: 5vw;
+      }
+    }
+
+    p {
+      font-size: 2vw;
+      text-align: justify;
+    }
+  }
+}

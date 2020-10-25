@@ -234,19 +234,18 @@
       <h1>Implementation</h1>
     </section>
     <!-- implementation text and stuff -->
-    <section class="generic-section implementation">
+    <section class="generic-section">
       <div class="flex-container">
-        <div class="item introbox">
+        <div class="introcontainer">
           <h2 class="introduction">Introduction</h2>
         </div>
         <div class="collabtext item">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          While planning the project, it is important to consider the real-life
+          implementation of the developed product or method. Our team decided to
+          design, build and test both genetically modified yeast strain for
+          lipid production as well as a bioreactor prototype. Together, these
+          two components form a fully functional system for light-driven lipid
+          production. Our prototype could be further upscaled for industry use.
         </div>
       </div>
     </section>
@@ -256,50 +255,156 @@
         src="https://2020.igem.org/wiki/images/a/a9/T--Estonia_TUIT--question.svg"
       />
       <div class="comm">
-        <h3>Commercial Survey</h3>
+        <h3>Biotech companies</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          We envision that companies may use our developed strain as a platform
+          to produce a variety of high-value lipid-derived products used in
+          medicine, cosmetics, food industry, etc. The strain has several
+          advantages:
         </p>
-        <button type="button" class="btn pill-button">Read more</button>
+        <ul id="commcollapse" class="impl-list collapse">
+          <li>
+            Light-inducible overexpression of TAGs synthesizing enzymes to
+            improve lipids final yield
+          </li>
+          <li>
+            Light-inducible overexpression of lipid droplet structure protein to
+            promote stabilization of TAGs in lipid droplets
+          </li>
+          <li>
+            Inactivation of the oxidative branch of pentose phosphate pathway
+            (PPP) to allow higher carbon flux towards lipid biosynthesis
+          </li>
+          <li>
+            Separate growth and production phases to further economize the
+            production process
+          </li>
+          <li>
+            Introduced cell self-lysing mechanism to minimize extraction and
+            purification costs
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="btn pill-button"
+          data-toggle="collapse"
+          data-target="#commcollapse"
+          aria-pressed="false"
+          aria-expanded="false"
+        >
+          Read more
+        </button>
       </div>
       <div class="public">
-        <h3>Public Survey</h3>
+        <h3>Public opinion</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Our team thought thoroughly about our project main goal. We believe
+          that our project will provide a cleaner and more sustainable solution
+          for manufacturing lipid-derived products in GM yeast.
         </p>
-        <button type="button" class="btn pill-button whitebtn">
+        <p id="publiccollapse" class="collapse">
+          To make sure our project approach is accepted by the general audience
+          (our potential customers) we conducted a survey. The results showed
+          that people consider GM organism bioproduction methods as a good
+          alternative to conventional production. Furthermore, it is important
+          for them that the products they consume leave minimal environmental
+          footprint. (More info about the survey could be found on the Human
+          Practices page)
+        </p>
+        <p id="publiccollapse" class="collapse">
+          Hence, our project would not only meet the expectations of the
+          potential consumers but also provides the possible solution to the
+          industry.
+        </p>
+        <button
+          type="button"
+          class="btn pill-button whitebtn"
+          data-toggle="collapse"
+          data-target="#publiccollapse"
+          aria-pressed="false"
+          aria-expanded="false"
+        >
           Read more
         </button>
       </div>
     </section>
+    <section class="implementation-section3">
+      <h2 class="section-header">Yeast-InP biohybrid</h2>
+      <p class="implementation-section3-paragraph">
+        The use of indium phosphide (InP) nanoparticles in our design provides
+        both advantages and disadvantages. On the one hand, harvesting light
+        with nanoparticles to provide electrons for NADPH formation is
+        beneficial, since light is one of the cleanest energy sources.
+      </p>
+      <p class="collapse collapsetext" id="viewitem_implement1">
+        However, the current nanoparticles themself are not ideal. InP presents
+        potential health risk to people occupationally exposed to its dust.
+        Because of this, several independent organizations (IARC, REACH, AGS,
+        and BMAS) have concluded that InP is a hazardous substance, and it is
+        listed on the 2017 list of Critical Raw Materials for the EU because of
+        possible risks of supply shortage. These facts may negatively affect our
+        project but with the help of prof. Guo we found that InP nanoparticles
+        are at the moment the most sustainable, green, and least toxic
+        semiconductor for biohybrid engineering. Moreover, prof. Guo stated that
+        InP nanoparticles may be recycled. Together, this expert’s opinion
+        greatly increases the value of our project since it means the production
+        could be fairy easily upscaled.
+      </p>
 
-    <section class="implementation-section3 generic-section">
+      <button
+        type="button"
+        data-toggle="collapse"
+        data-target="#viewitem_implement1"
+        class="btn pill-button collapsed"
+        aria-pressed="false"
+      >
+        Read more
+      </button>
+    </section>
+
+    <section class="implementation-section4 generic-section">
       <div class="flex-container">
         <div class="mansvg">
-          <img class="man" src="assets/img/man.svg" />
+          <img
+            class="man"
+            src="https://2020.igem.org/wiki/images/7/79/T--Estonia_TUIT--manImplementation.svg"
+          />
         </div>
         <div class="impltext">
-          <h1>Project Implementation</h1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-          <button type="button" class="btn pill-button">Read more</button>
+          <h2>Bioreactor prototype</h2>
+          <p>
+            To provide ideal conditions for our constructed yeast our team
+            decided to build a bioreactor. Several aspects of project design
+            needed to be taken into account while engineering the bioreactor:
+          </p>
+          <ul id="bioreactorcollapse" class="collapse">
+            <li>
+              During the growth phase, light-inducible promoters must stay
+              inactivated while InP nanoparticles need to be illuminated to
+              supply cells with sufficient amount of electrons for NADPH
+              synthesis;
+            </li>
+            <li>Growth temperature should be held constantly at 30 °C;</li>
+            <li>
+              The cells should be constantly mixed to provide equal illumination
+              and supplementation throughout the culture.
+            </li>
+          </ul>
+          <p id="bioreactorcollapse" class="collapse">
+            Our team successfully overcame these problems and constructed the
+            Bioreactor “SANYA”. More info about bioreactor can be found on the
+            Proof of Principle page.
+          </p>
+          <button
+            type="button"
+            class="btn pill-button"
+            data-toggle="collapse"
+            data-target="#bioreactorcollapse"
+            aria-pressed="false"
+            aria-expanded="false"
+          >
+            Read more
+          </button>
         </div>
       </div>
     </section>

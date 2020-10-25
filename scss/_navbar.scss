@@ -37,6 +37,8 @@
 
 // Styling for the navbar
 .mainNav {
+  padding-right: 0;
+  padding-left: 0;
   // filter: blur(1px);
   border-color: fade-out($gray-darker, 0.95);
   border-bottom: 1px solid black;

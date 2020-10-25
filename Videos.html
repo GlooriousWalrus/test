@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="assets/css/starter.css" />
   <title>Team:Estonia_TUIT - 2020.igem.org</title>
+
+  <script src="https://2020.igem.org/Team:Estonia_TUIT/videojs?action=raw&amp;ctype=text/javascript"></script>
+  <link rel="stylesheet" href="https://2020.igem.org/Team:Estonia_TUIT/videocss?action=raw&amp;ctype=text/css" />
 </head>
 
 <body>
@@ -92,134 +95,38 @@
   <section class="banner collaborationsbanner" id="tsparticles">
     <script src="assets/js/tsparticles.min.js"></script>
     <script type="module" src="assets/js/sparkles.js"></script>
-    <h1>Collaborations</h1>
+    <h1>Videos</h1>
   </section>
   <!-- collab text and stuff -->  
   <section class="generic-section">
     <div class="flex-container">
       <div class="introcontainer">
-        <h2 class="introduction">Introduction</h2>
+        <h2 class="introduction">Overview</h2>
       </div>
       <div class="collabtext item">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </div>
     </div>
   </section>
-  <section class="collabsection3">
-    <img class="collabdrops" src="assets/img/collabs_dots.png"></img>
-    <div class="flex-container">
-      <img class="collableaf" src="assets/img/collab_leaf.png"></img>
-      <div class="textbox">
-        <h1 class="united">United</h1>
-        <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-      </div>
+
+  <section class="videosection">
+    <div class="imgcontainer">
+      <h2 class="videoheader">Our project</h2>
+      <img class="videodots1" src="https://2020.igem.org/wiki/images/1/14/T--Estonia_TUIT--videodots1.svg">
     </div>
-  </section>
-  <section class="collabsection4">
-    <h3>Instagram Collaborations</h3>
-    <div class="flex-container">
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-    </div> 
-    <h3>Initiated by us</h3>
-    <div class="flex-container row2">
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-    </div>
-    <h3>Surveys</h3>
-    <div class="flex-container row2">
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-    </div> 
-    <h3>Journal collaboriations and others</h3>
-    <div class="flex-container row2">
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
-      <div class="flex-item" data-toggle="modal" data-target="#collabmodal">
-        <img src="assets/img/collab_icon.png"></img>
-      </div>
+    <img class="thankyou" src="https://2020.igem.org/wiki/images/7/76/T--Estonia_TUIT--videosthankyou.svg">
+    <div class="videocontainer">
+        <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            data-setup="{}"
+        >
+            <source src="https://2020.igem.org/wiki/images/f/f5/T--EStonia_TUIT--engenering_work.mp4" type="video/mp4" />
+        </video>
     </div>
   </section>
 
 
-  <!-- modal -->
-  <div class="modal fade" id="collabmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h5 class="modal-title w-100" id="exampleModalLabel">Science festival in Narva!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <!-- <span aria-hidden="true">&times;</span> -->
-          </button>
-        </div>
-        <div class="modal-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <h5 class="modal-title w100 text-center">
-            Interact, Engage, Inspire
-          </h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          <div class="bluerect">
-          </div>
-          <div class="whiterect">
-          </div>
-          <img src="https://2020.igem.org/wiki/images/3/3b/T--Estonia_TUIT--teampic.jpg">
-          </img>
-          
-        </div>
-
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
   
   <div class="footer">
     <div class="contactblock">
