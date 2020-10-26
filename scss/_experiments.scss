@@ -293,3 +293,16 @@
     text-indent: 5%;
   }
 }
+
+#dualtable {
+  align-items: flex-start;
+
+  .table.table-responsive {
+    width: 100%;
+  }
+}
+
+#table1 {
+  width: 50%;
+  margin-right: 10%;
+}

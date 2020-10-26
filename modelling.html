@@ -1,0 +1,770 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/starter.css" />
+  <title>Team:Estonia_TUIT - 2020.igem.org</title>
+  <link rel="stylesheet" type="text/css" href="https://2020.igem.org/Team:Estonia_TUIT/ResetCSS?action=raw&amp;ctype=text/css">
+  <link rel="stylesheet" type="text/css" href="https://2020.igem.org/Team:Estonia_TUIT/chartcss?action=raw&amp;ctype=text/css">
+  <script src="https://2020.igem.org/Team:Estonia_TUIT/chartjs?action=raw&amp;ctype=text/javascript"></script>
+  
+  <script>
+      var element = document.querySelector(".igem-column-wrapper");
+      element.classList.remove("igem-column-wrapper");
+  </script>
+<style>
+
+.modeling-table {
+    background-color: transparent;
+}
+
+.modeling-table table {
+    border: 3px solid #00c7cf;
+	border-top-left-radius: 2vw;
+	border-top-right-radius: 2vw;
+	border-bottom-left-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+	width: 70vw;
+    margin-right: 3vw;
+}
+
+.modeling-table thead tr {
+	background-color: #00c7cf;
+	
+}
+
+.modeling-table thead tr th {
+	font-family: 'Muli';
+	text-align: center;
+	color: white
+}
+
+.modeling-table tbody {
+	font-family: 'Muli';
+	background-color: #f0f0f0;
+	
+}
+
+.modeling-table tbody td {
+	text-align: center;
+	color: black
+}
+
+
+/* Second table */
+.modeling-table2 thead tr th {
+    /*
+	padding-bottom: 2.5vw;
+    padding-top: 2vw;
+    */
+	font-family: 'Muli';
+	text-align: center;
+	color: white
+}
+.modeling-table2 thead tr {
+	background-color: #00c7cf;
+	/* border-top: 3px solid #00c7cf */
+}
+
+.modeling-table2 tbody {
+	font-family: 'Muli';
+	background-color: #f0f0f0;
+	
+}
+
+.modeling-table2 tbody td {
+	text-align: center;
+	color: black
+}
+
+.modeling-table2 table {
+    border: 3px solid #00c7cf;
+	border-top-left-radius: 2vw;
+	border-top-right-radius: 2vw;
+	border-bottom-left-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+	width: 80vw;
+	margin-left: 6vw;
+	font-size: 1vw;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top mainNav">
+    <script type="module" src="https://2020.igem.org/Team:Estonia_TUIT/navbar?action=raw&amp;ctype=text/javascript"></script>
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="https://2020.igem.org/Team:Estonia_TUIT">
+        <img src="https://2020.igem.org/wiki/images/b/b5/T--Estonia_TUIT--tuitlogo.png" alt="" height="55">
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Project</a>
+            <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink2">
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Description">Description</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Design">Design</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Contribution">Contribution</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Implementation">Implementation</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Results</a>
+            <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink2">
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Results">Results</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Model">Modelling</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Proof_Of_Concept">Proof of Concept</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Engineering">Engineering</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Human Practices</a>
+            <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink3">
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Human_Practices">Human Practices</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Partnership">Partnership</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Collaborations">Collaborations</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Education">Education</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Lab</a>
+            <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink4">
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Parts">Parts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Notebook">Notebook</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Experiments">Experiments</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Safety">Safety</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">People</a>
+            <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdownMenuLink4">
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Team">Team</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Attributions">Attributions</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Sponsors">Sponsors</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="https://2020.igem.org/Team:Estonia_TUIT/Videos">Videos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Description banner -->
+  <section class="banner modelingbanner" id="tsparticles">
+    <script src="https://2020.igem.org/Team:Estonia_TUIT/tsparticles?action=raw&amp;ctype=text/javascript"></script>
+    <script type="module" src="https://2020.igem.org/Team:Estonia_TUIT/sparkles?action=raw&amp;ctype=text/javascript"></script>
+    <h1>Modeling</h1>
+  </section>
+
+  <section class="generic-section">
+    <div class="flex-container">
+      <div class="introcontainer">
+        <h2 class="introduction">Introduction</h2>
+      </div>
+      <div class="collabtext item">
+To quantitatively represent the behaviour of the molecular mechanisms, we used different model classes scaling from a single cell to the entire culture and from transcriptional activation to lipid synthesis. We took two approaches to model the lipid production. First, we used an agent-based stochastic model to compare lipid production of a wild-type cell with that of our producer cell. Secondly, we implemented a system of ODEs (ordinary differential equations) to predict the rate of  triacylglycerol (TAG) accumulation in genetically modified cell culture and estimate the effect of variable induction levels of the light-inducible promoters.
+</div>
+</div>
+  </section>
+
+    <!-- description section -->
+    <div class="sticky-container">
+      <script type=module src="https://2020.igem.org/Team:Estonia_TUIT/stickybar?action=raw&amp;ctype=text/javascript"></script>
+      <!-- Sticky sidebar -->
+      <div class="stickybar" id="stickyelm">
+          <ul id="list">
+              <li><a href="#1">Stochastic model</a></li>
+              <li><a href="#2">ODE model</a></li>
+              <li><a href="#3">Supplementary Table 1</a></li>
+              <li><a href="#4">Supplementary Table 2</a></li>
+              <li><a href="#">Back to top</a></li>
+          </ul>
+      </div>
+
+    <!-- Description sections -->
+    <a class="anchor" id="1"></a>
+    <section class="descriptionsection">
+    <h2 class="section-header"> Agent-based stochastic model </h2>
+        <p class="desc-text-1">
+We started by comparing lipid accumulation in wild-type (WT) <i>Saccharomyces cerevisiae</i> and the strain with deleted TAG lipases <i>(tgl1Δ, tgl4Δ)</i>. The agent-based stochastic mathematical model where each lipid-related reaction can be modified using a set of existing parameters was implemented. This model was developed by Schützhold et al (2016). In this model only one TAG lipase, Tgl4, is present. As was clarified by one of the authors of this research, Dr. Jens Hahn, this particular enzyme was chosen due to its multifunctional nature in the yeast lipid metabolism (Rajakumari & Daum, 2010). The number of enzymes is reduced in order to simplify the model, but save the dynamic approach and comprehensiveness. However, according to the commentary by Dr. Jens Hahn, the deletion of the model reaction would affect the system more than the mere knockout of the Tgl4. We presumed that this influence can be comparable with the knockout of all the participating lipases (tgl3, tgl4 and tgl5, Figure 2). Therefore, for simplicity we will refer to deletion of Tgl1 and Tgl4 as deletion of TAG lipases in general (tglΔ). 
+        </p>
+        <p>
+The main unit of the model is an enzymatic reaction, which results in the production of a precursor for lipid synthesis or a lipid molecule itself. 
+Other parameters such as the cell cycle length may be held constant. In the model, the duration of a single cell cycle is 7200 seconds. 
+In every time point (time step equals 1 second) enzymatic reactions are executed according to their corresponding probabilities. 
+The probability of the reaction to occur together with the maximum number of executions <i>N<sub>max</sub></i> per time step can be changed. 
+These parameters are based on the Michaelis-Menten equation for enzymatic reactions: <i>N<sub>max</sub></i> corresponds to <i>v<sub>max</sub></i>, <i>[S]</i> corresponds to the substrate concentration, <i>K<sub>M</sub></i>  is a Michaelis-Menten constant and probability <i>p</i> is calculated as follows.
+</p>
+<img class = "img-responsive image-placeholder-15-45" src="https://2020.igem.org/wiki/images/3/39/T--EStonia_TUIT--Modeling_formula_1_2.png" alt="Responsive image">
+<p>
+As a result, the production rates of different molecules can be adjusted depending on the genetic modifications. After every step of simulation, probabilities of reactions are updated according to the substrate concentration in that step.
+The output of the simulation is 7200 data points, indicating the cellular content at each time step. We ran 10 simulations of the lipid accumulation in lipid droplets of both WT and the modified strain to consider the influence of deleted lipases (Tgl1 and Tgl4) (Figure 1). In case of deleted lipases, the number of TAG lipase reaction executions <i>N<sub>max</sub></i> was set to 0, which corresponds to complete loss of the enzyme activity.
+</p>
+<img class = "img-responsive image-placeholder-32-45" src="https://2020.igem.org/wiki/images/c/c7/T--EStonia_TUIT--Modeling--fig1.jpg" alt="Lipid accumulation">
+<p class="fig-legend"><b>Figure 1. Lipid accumulation in lipid droplets in <i>S. cerevisiae</i> cell.</b> The accumulation of the lipid molecules (TAGs and SEs) in the lipid droplets of a single wild-type cell (Wt) and a genetically modified cell with deleted lipases (<i>tglΔ</i>) during one cell cycle (7200 seconds). </p>
+<p>
+In the late G1 phase of the yeast cell cycle, buds emerge from the mother cells. This creates an increased need for lipids to build the growing membranes of the buds. TAGs are mobilized from lipid droplets due to lipase activity of Tgl4, which, in turn, is activated via phosphorylation by cyclin-dependent kinase (CDK1/CDC28) (Kurat et al., 2009). When the lipases are deleted, TAG and SE molecules are not utilized and their accumulation continues, resulting in an up to 2.25 fold increase in the number of lipid molecules (18000 molecules per cell compared to 7800 molecules per cell in the WT) according to the model (Figure 1).
+To further increase the lipid accumulation, we aimed to model overexpression of two enzymes responsible for lipid production in <i>S. cerevisiae</i>: Phosphatidic acid phosphohydrolase 1, or PAP, and Diacylglycerol acyltransferase, or DGAT. PAP converts   phosphatidic acid (PA) into DAG, and DGAT catalyses the formation of TAG from DAG (Figure 2, see Description for more information). Consequently, the efficiency of DAG production could be a limitation in TAG production, and the enzymatic activity of the two mentioned enzymes could differently influence the accumulation of the final product. As it is described by Schützhold et al, altering different reactions’ parameters will variously affect the system. For instance, the sensitivity of the model to changes in TAG lipase kinetic parameters is drastically higher than the sensitivity to overexpression of TAG-producing enzymes. We made model simulations with increased reaction rate (10 times) for both DGAT and PAP enzymes separately and together to observe the difference in the final lipid content (Figures 3, 4).
+</p>
+<img class = "img-responsive image-placeholder-35" src="https://2020.igem.org/wiki/images/7/72/T--EStonia_TUIT--Modeling--fig4.jpg" alt="Acetyl-CoA">
+<p class="fig-legend"><b>Figure 2. A concise scheme of the lipid metabolism in S. cerevisiae.</b> Enzymes encoded by <i>PAH1</i> and <i>DGA1</i> genes catalyse reactions leading to TAGs formation, while lipases Tgl3, 4 and 5 degrade TAG molecules. The figure is based on the data obtained by Ma et al., 2019
+</p>
+<p>
+First, we considered the effect of separate overexpression of DGAT and PAP. Although the decrease in lipid numbers after G1 phase does not occur with overexpressed DGAT, unlike with PAP overexpression, the influence of these two enzymes on TAG accumulation in lipid droplets is equalized in the absence of the lipase activity (Figure 3).
+Secondly, we compared the accumulation of lipids with overexpressed DGAT and PAP genes separately and together (Figure 3, 4).
+</p>
+<img class="img-responsive image-placeholder-32-45" src="https://2020.igem.org/wiki/images/4/41/T--EStonia_TUIT--Modeling--fig2.jpg" alt="Lipid accumulation"> 
+<p class="fig-legend"> <b>Figure 3. The effect of coupling enzymes overexpression of each enzyme separately with the deletion of lipases.</b> The accumulation of the lipid molecules (TAGs and SEs) in the lipid droplets of a single wild-type cell (dark blue), a genetically modified cell with deleted lipases (tglΔ) (yellow), a cell with overexpressed DGAT (light blue), a cell with overexpressed  and deleted lipases (light blue dashed), a cell with overexpressed PAP (green) and a cell with overexpressed PAP and deleted lipases (green dashed).
+</p>
+<p>
+Higher yields of lipid molecules were also observed in the cell with simultaneous overexpression of both enzymes together compared to the separate overexpression of enzymes with deleted lipases (Figure 4).
+</p>
+<p>
+Finally, the number of lipid molecules in the modified yeast strain increased more than 4 times (Figure 4) compared to the wild-type strain (32000 molecules compared to 7800 molecules).
+</p>
+<img class="img-responsive image-placeholder-32-45" src="https://2020.igem.org/wiki/images/4/45/T--EStonia_TUIT--Modeling--fig3.jpg" alt="Lipid accumulation">
+<p class="fig-legend">
+<b>Figure 4. The effect of coupled PAP and DGAT overexpression in a cell with deleted lipases.</b> The accumulation of the lipid molecules (TAGs and SEs) in the lipid droplets of a single wild-type cell (dark blue), a cell with overexpressed DGA and PAP and deleted lipases (light blue), a cell with overexpressed DGAT and deleted lipases (green dashed) and a cell with overexpressed PAP an deleted lipases (yellow dashed).
+</p>
+<p>
+The results of the agent-based model indicate that the combination of TAG lipase deletions together with overexpression of TAG-producing enzymes led to the highest amount of lipids in the cell. These modifications were later implemented in the lab.
+</p>
+    </section>
+
+<!-- NEXT SECTION -->
+<a class="anchor" id="2"></a>
+    <section class="descriptionsection sectiondark section2">
+      <h2 class="section-header" > ODE model </h2>
+        <p>
+Agent-based modeling helps to resolve the metabolic complexity and does not require many reaction equations and kinetic constants. However, the same benefits of this model can also become its limitations when it comes to modeling the expression of genes from complex synthetic constructs
+        </p>
+<p>
+The agent-based model does not allow to simulate some types of experimental conditions. For example, changing the amounts of  NADPH and acyl-CoA in the model did not affect the predicted lipid concentration significantly. Additionally, the model is limited to the duration of a single cell cycle, and thus does not allow for simulation duration that would resemble real production conditions.
+</p>
+<p>
+In order to construct a more comprehensive model that would allow us to make predictions about the final TAG yield and thus evaluate the feasibility of our strain, we decided to use a set of deterministic ODEs. Unlike stochastic approaches to the modeling of biological systems, deterministic models such as ODE models are based solely on the kinetic characteristics and the initial conditions of a system (Palaniappan et al., 2019). For example, the following set of ODEs describes VP-EL222 mediated gene expression (Benzinger & Khammash, 2018).
+</p>
+<img src="https://2020.igem.org/wiki/images/b/be/T--EStonia_TUIT--Modeling_formula3.png" class="img-responsive image-placeholder-20-40" alt="Responsive image">
+<p>
+On the molecular level, blue light illumination triggers the dimerization of VP-EL222 transcription factor (TF), which shifts the equilibrium towards its active form and subsequently increases the strength of its binding to DNA. This is reflected by an increase in the value of kon parameter. In (1), parameter I denotes blue light intensity which acts as a scaling factor for kon. The model includes a total of 10 parameters whose description, values, and sources can be found in supplementary table 1.
+</p>
+<p>
+The advantage of the VP-EL222 based system is its short response time and a low degree of leakiness (Benzinger & Khammash, 2018). To study such behavior, we modeled the protein expression levels of PAP (product of PAH1) and DGAT (product of DGA1) under light intensities ranging from 0 μW cm-2 (no light) to 400 μW cm-2.
+</p>
+<!-- HERE GOES DYNAMIC GRAPH -->
+<div>
+          <canvas id="myChart" class="modelingchart"></canvas>
+          <script type="module" src="https://2020.igem.org/Team:Estonia_TUIT/dynamic_js.js?action=raw&amp;ctype=text/javascript"></script>
+</div>
+
+<p class="fig-legend">
+<b>Figure 5. The dependency of enzyme concentration on light intensity.</b> Light intensity (I) is given in units μW cm-2. *Color* linel: PAH1 gene expression under the control of 5xBS-CYC180pr. Wild-type level of PAP (PAH1 gene product) is 2607 molecules per cell. Overexpression at light intensity 400 μW cm-2  is predicted to increase PAP abundance 4.5 times in comparison to wild-type strains. *Insert color* line: DGA1 expression under the control of 5xBS-GAL1pr. Wild-type level of DGAT (DGA1 gene product) is 1431 molecules/cell. Overexpression is predicted to increase DGAT abundance 6 times in comparison to wild-type strains. It can be seen that after I = 320 μW cm-2 increasing light intensity does not influence DGAT concentration significantly; for PAP, the same happens after I reaches 400 μW cm-2. The image is dynamic. Light intensity I is changed by pulling the slider left and right.
+</p>
+<p>
+The results demonstrate that the system possesses fast response times and low basal expression, which allows us to fine-tune TF activation to achieve the desired gene expression.
+</p>
+<p>
+Clearly, increasing light intensity results in a higher gene expression. However, in practice, increasing light intensity indefinitely will not necessarily lead to higher lipid production when the cells are coated with semiconductor nanoparticles. It has been shown that prolonged exposure to high light intensities can lead to photodamage (Guo, Figure 6). This is reflected by a decrease in external quantum efficiency, which in our case is the ratio of the number of photogenerated electrons used to regenerate NADPH to the number of incident photons.
+</p>
+<p>
+We contacted Prof. Guo regarding this, since we were interested in how this effect could be minimized or prevented. Prof. Guo informed us that it is possible that the excess of photogenerated electrons can lead to elevated levels of reactive oxygen species causing cellular stress. Therefore, in order to decrease phototoxicity, illumination power should be kept below the level at which induced cellular stress starts to adversely affect lipid production. Guo et al. (2017) have shown that after 5.60 mW cm-2 the yield started to decrease. This is translatable to our strain as well, since the species used in the study was the same.
+</p>
+
+<img class="img-responsive image-placeholder-32-45" src="https://2020.igem.org/wiki/images/e/ee/T--EStonia_TUIT--Modeling--ext_quant_eff.png" alt="Illumination">
+<p>
+<b>Figure 6. External quantum yield of NADPH regeneration at different illumination times</b>, adapted from Guo et al. (2017). This was estimated based on photochemical shikimic acid production. Error bars represent standard error of three independent replicates. External quantum yield describes the ratio of electrons participating in a reaction to the number of incident photons. There is a significant decrease in external quantum efficiency, possibly due to photodamage
+</p>
+<p>
+In order to assess the feasibility of our constructed yeast strain, we decided to model the production of TAGs and compare the final yield to the published values (Teixeira, David, Siewers & Nielsen, 2018). For that, we used the Michaelis-Menten model. Under the quasi-steady-state approximation, the rate of product formation can be expressed as Michaelis-Menten equation (Briggs & Haldane, 1925):
+</p>
+    <img src="https://2020.igem.org/wiki/images/2/21/T--EStonia_TUIT--Modeling_formula4.png" class="img-responsive image-placeholder-15-30" alt="Responsive image">
+<p>
+This equation allows us to find the rate of product formation, given the concentration of an enzyme and that of a substrate.
+</p>
+<p>
+As was previously mentioned, in S. cerevisiae TAGs are synthesized from DAGs by DGAT (DGA1 gene product), and DAGs, in turn, are obtained through the conversion of phosphatidic acid (PA) by PAP (PAH1 gene product). Therefore, the following system of Michaelis-Menten equations describes the production of TAGs:
+</p>
+<img src="https://2020.igem.org/wiki/images/e/e3/T--EStonia_TUIT--Modeling_formula5.png" class="img-responsive image-placeholder-20-30" alt="Responsive image">
+<p>
+The currently accepted model of lipid biogenesis called budding model assumes that DGAT and other proteins involved in neutral lipid metabolism accumulate in certain regions of endoplasmic reticulum (ER). Indeed, protein localization studies have revealed that DGAT is a microsomal protein (Athenstaedt & Daum, 2006). This is in line with the fact that TAGs are nonpolar molecules which cluster in the hydrophobic region within the ER bilayer. Therefore, our model assumes the formation of DAGs and consequently TAGs from microsomal PA (i.e. PA found only in ER). In order to do that, we estimated the concentration of PA given 24.2 mg phospholipids/g CDW and the fraction of total phospholipids that is PA in microsomes which was found to be 0.2% (Zinser et al., 1991) (Figure 7, bottom panel). The kinetic constants found in both Michaelis-Menten equations are provided in Supplementary Table 1.
+</p>
+<p>
+To account for the expression of endogenous PAH1 and DGA1, we use the median abundance of their products (2607 and 1431 molecules/cell, respectively (Ho et al., 2018)) and assume that it remains constant.
+</p>
+<img class="img-responsive image-placeholder-32-45" src="https://2020.igem.org/wiki/images/4/4b/T--EStonia_TUIT--Modeling--ode_model.png" alt="Accumaltion">
+<p class="fig-legend">
+<b>Figure 7. Accumulation of TAG and PA through the cultivation.</b> Top panel: TAG production and accumulation dynamics according to the ODE model, wild type and with enzymes PAP and DGAT overexpressed. Final TAG concentration for the wild type culture is predicted to be 13.9 mg/gCDW; PAP and DGAT overexpression increases it more then 6 times, raising the final concentration to 86.7 mg/gCDW. To model wild type accumulation, PAP and DGAT concentration were set corresponding to median cell abundance and multiplied by number of cells (derived from the biomass). Llight induction with the intensity of
+420 μW cm-2 starts on the 25th hour of cultivation. Bottom panel: the model of biomass growth and glucose consumption of S. cerevisiae W303 strain (see the our <a style="color:white;" href="https://2019.igem.org/Team:Tartu_TUIT/Model"> <u>iGEM2019 model</u></a> for details and parameters) used as a basis for PA accumulation modeling.
+</p>
+<p>
+Predicted TAG concentration reached the value 86.7 mg/gCDW at the end of the 72 h cultivation period (Figure 7, top panel). A similar study performed by Teixeira et al. reported yields of around 80 mg/gCDW of TAG for a strain with overexpressed DGA1, PAH1, deletions of TAG lipase genes TGL3/4/5, and the ACC1S659A,S1157A,S686 mutation which removes the feedback inhibition of ACC1 activity by SNF1 (Teixeira, David, Siewers & Nielsen, 2018).
+</p>
+<p>
+Our mathematical model of TAG production in lipid droplets takes into account the overexpressed PAH1 and DGA1 genes as well as deleted TAG lipases TGL3/4/5. The latter is reflected in the model by the fact that degradation of TAG is not considered. As a result, our model allows us to predict the final yield of TAG at the end of a fermentation period of any given length and under various light conditions, which makes it a useful tool during the production system design.
+</p>
+<p>
+Our model, however, does not consider the effect of electron generation by nanoparticles or the efficiency of our improved yeast autolysis method. Although these aspects will affect the final lipid yield, they are difficult to model mathematically using the available tools. The electron transfer from semiconductor to cytosol, and eventually to the enzyme, is a complex process which is not yet fully understood. There are some theories which explain the underlying mechanism; however it seems that a definitive consensus has not been reached yet (Guo et al., 2018). Therefore, modeling of electron generation and transfer will not be implemented in our dry lab this year.
+</p>
+<a class="anchor" id="3"></a>
+<h2>Supplementary Table 1</h2>
+<section class="modeling-table">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th scope="col" class="left-align"> Parameter/ Measurement units </th>
+                    <th scope="col" class="left-align"> Description </th>
+                    <th scope="col" class="left-align"> Value: 5xBS-C180pr </th>
+                    <th scope="col" class="left-align"> Value: 2xBS-C180pr </th>
+                    <th scope="col" class="left-align"> Value: 5xBS-GAL1pr </th>
+                    <th scope="col" class="left-align"> References </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> TFtotal (Molecule) </td>
+                    <td> total cellular TF</td>
+                    <td colspan="3">2000</td>
+                    <td rowspan="9" class="left-align">Benzinger, D., Khammash, M.,2018
+                      <!-- ETO SUPER HUEVO NO POHUJ -->
+                      <br><br><br><br><br><br>
+                      * - estimated on the basis of promoter activity data reported by Benzinger et al.;<br> 
+                      ** - values imputed from 2xBS-C180pr;
+                      </td>
+                    
+                </tr>
+                <tr>
+                    <td> kon (min-1) </td>
+                    <td>light dependant</td>
+                    <td colspan="3">0.0016399</td>
+              
+                </tr>
+                <tr>
+                    <td>koff (min-1)  </td>
+                    <td>VP-EL222 dark-state reversion rate  </td>
+                    <td colspan="3">0.34393</td>
+                </tr>
+                <tr>
+                    <td> Kbasal (mRna • min-1) </td>
+                    <td> basal transcription rate</td>
+                    <td>0.02612</td>
+                    <td>0.24358</td>
+                    <td>0 *‬</td>
+                </tr>
+                    <td>kmax (mRNA • min-1)</td>
+                    <td>maximal induced transcription rate</td>
+                    <td>13.588</td>
+                    <td>11.031</td>
+                    <td>10.22731087*</td>
+                </tr>
+                </tr>
+                    <td>kd (molecules)</td>
+                    <td>level required for achieving kmax/2</td>
+                    <td>956.75</td>
+                    <td colspan="2">1462.5 **</td>
+                </tr>
+                </tr>
+                    <td>n (-)</td>
+                    <td>hill coefficient</td>
+                    <td>4.203</td>
+                    <td colspan="2">4.6403**</td>
+                </tr>
+                </tr>
+                    <td>KdegR (min-1)</td>
+                    <td>mRNA degradation rate</td>
+                    <td colspan="3">0.042116</td>
+                </tr>
+                </tr>
+                    <td>Ktrans (proteins • min-1 • mRNA-1)</td>
+                    <td>translation rate</td>
+                    <td colspan="3">1.4514</td>
+                </tr>
+                </tr>
+                    <td>KdegP (min-1)</td>
+                    <td>PAP degradation rate </td>
+                    <td>0.0315</td>
+                    <td colspan="2">---</td>
+                    
+                    <td>Martin-Perez & Villén, 2017</td>
+                </tr>
+                <tr>
+                    <td>KdegP (min-1)</td>
+                    <td>DGAT1 degradation rate </td>
+                    <td colspan="2">---</td>
+                    <td>0.0385</td>
+                    <td>Benzinger, D., Khammash, M.,2018</td>
+                </tr>
+                <tr>
+                  <td>Mr PA</td>
+                  <td>PA molecular weight</td>
+                  <td>226.08</td>
+                  <td>---</td>
+                  <td>226.08</td>
+                  <td>Benzinger, D., Khammash, M.,2018</td>
+              </tr>
+              <tr>
+                  <td>Mr TAG (g/mol)</td>
+                  <td>TAG  molecular weight</td>
+                  <td colspan="2">---</td>
+                  <td>992.1</td>
+                  <td>Benzinger, D., Khammash, M.,2018</td>
+              </tr>
+              <tr>
+                  <td>km DGAT (uM))</td>
+                  <td>concentration of substrates for DGAT at half of Vmax (uM)</td>
+                  <td colspan="2">---</td>
+                  <td>15.9</td>
+                  <td>Benzinger, D., Khammash, M.,2018</td>
+              </tr>
+                <tr>
+                  <td>kcat DGAT (uM)</td>
+                  <td>number of times DGAT converts substrate to product per unit time</td>
+                  <td colspan="2">---</td>
+                  <td>90.8439</td>
+                  <td>Wang et al., 2020</td>
+                </tr>
+                <tr>
+                  <td>km PAP (hr-1)</td>
+                  <td>concentration of substrates for PAP at half of Vmax (hr-1)</td>
+                  <td>50</td>
+                  <td colspan="2">---</td>
+                  <td rowspan="2">Lin & Carman, 1988</td>
+                </tr>
+                <tr>
+                  <td>kcat PAP (hr-1)</td>
+                  <td>number of times PAP converts substrate to product per unit time</td>
+                  <td>162000</td>
+                  <td colspan="2">---</td>
+                  
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <a class="anchor" id="4"></a>
+    <h2>Supplementary Table 2 </h2>
+    <h2> Agent-Based Model parameters</h2>
+    <section class="modeling-table2">
+      <table class="table table-responsive">
+          <thead>
+              <tr>
+                  <th scope="col" class="left-align"> no. </th>
+                  <th scope="col" class="left-align"> Reaction name in model </th>
+                  <th scope="col" class="left-align"> Enzyme standard name </th>
+                  <th scope="col" class="left-align"> Probability <i> p </i> </th>
+                  <th scope="col" class="left-align"> <i> KM </i> </th>
+                  <th scope="col" class="left-align"> <i> Nma x</i> </th>
+                  <th scope="col" class="left-align"> Catalyzed reaction(s)  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td> I </td>
+                  <td> self.acetyl_coa_synthase</td>
+                  <td>Pda1/Pdb1, Lat1 </td>
+                  <td> --- </td>
+                  <td> 550 (pyruvate) </td>
+                  <td> 650</td>
+                  <td> pyruvate --> ACoA</td>
+              </tr>
+              <tr>
+                <td> II </td>
+                <td> self.acyl_synthase</td>
+                <td>Fas1/2, Cem1, Htd2, Etr1</td>
+                <td> --- </td>
+                <td> 1000 (acetyl_coa) </td>
+                <td> 450</td>
+                <td> ACoA --> Acyl-CoA</td>
+            
+              </tr>
+              <tr>
+                <td> III </td>
+                <td> self.lyso_PA_synthase </td>
+                <td>Gpt1/Gat1, Ayr1, Slc1 </td>
+                <td> --- </td>
+                <td> 30 (acyl_coa), 481.48 (DHAP) </td>
+                <td> 17</td>
+                <td> Gly-3-P + Acyl-CoA --> lyso-PA, DHAP + Acyl-CoA --> lyso-PA </td>
+              </tr>
+              <tr>
+                <td> IV </td>
+                <td> self.PA_synthase </td>
+                <td>---</td>
+                <td>--- </td>
+                <td> 30 (acyl_coa), 5 (lyso-PA)</td>
+                <td> 17</td>
+                <td> lyso-PA + Acyl-CoA --> PA </td>
+              </tr>
+                <td> V </td>
+                <td> self.DAG_synthase</td>
+                <td>Pah1  </td>
+                <td> 0.3 (G1), 0.01 (S-M) </td>
+                <td> ---</td>
+                <td> 34</td>
+                <td> PA --> DAG + Pi </td>
+              </tr>
+              </tr>
+                <td> VI </td>
+                <td> self.TAG_synthase</td>
+                <td>Dga1</td>
+                <td> --- </td>
+                <td> 30 (acyl_coa), 5 (DAG) </td>
+                <td> 30</td>
+                <td> DAG + Acyl-CoA --> TAG </td>
+              </tr>
+              </tr>
+                <td> VII </td>
+                <td> self.TAG_lipase</td>
+                <td>Tgl4, Tgl1 </td>
+                <td> 0.05 (G1), 0.6 (S-M)</td>
+                <td> --- </td>
+                <td> 23</td>
+                <td> TAG --> DAG + Acyl-CoA, Sterylester --> ergosterol + Acyl-CoA</td>
+              </tr>
+              </tr>
+                <td> VIII </td>
+                <td> self.DAG_kinase</td>
+                <td>Dgk1</td>
+                <td> 0.03 (G1), 0.1 (S-M) </td>
+                <td> --- </td>
+                <td> 40</td>
+                <td> DAG + CTP --> PA + CDP</td>
+              </tr>
+              </tr>
+                <td> IX </td>
+                <td> self.CDP_DG_synthase</td>
+                <td>Cds1 </td>
+                <td> --- </td>
+                <td> 5 (PA), 1 (CTP) </td>
+                <td> 20</td>
+                <td> PA + CTP --> CDP-DG + PPi</td>
+              </tr>
+              </tr>
+                <td> X </td>
+                <td> self.PS_synthase</td>
+                <td>PCho1</td>
+                <td> --- </td>
+                <td> 150 (serine), 5 (CDP-DG) </td>
+                <td> 18</td>
+                <td> CDP-DG + serine --> PS + CMP</td>
+              </tr>
+              <tr>
+                <td> XI </td>
+                <td> self.PE_synthase</td>
+                <td>Psd1/2</td>
+                <td> --- </td>
+                <td> 5 (PS) </td>
+                <td> 12</td>
+                <td>PS --> PE + CO2 </td>
+              </tr>
+              <tr>
+                <td> XII </td>
+                <td> self.PC_synthase</td>
+                <td>Cho2, Opi3, Opi3 </td>
+                <td> --- </td>
+                <td> 198.6 (SAM), 5 (PE) </td>
+                <td> 5</td>
+                <td> PE + 3 SAM --> PC + 3 SAH</td>
+            </tr>
+            <tr>
+                <td> XIII </td>
+                <td> self.glycerol_3_p_synthesis</td>
+                <td>Gpd1 </td>
+                <td> --- </td>
+                <td> 1000 (DHAP) </td>
+                <td> 8</td>
+                <td> DHAP --> Gly-3-P</td>
+            </tr>
+            <tr>
+              <td> XIV </td>
+              <td> self.CL_synthase</td>
+              <td>Pgs1, Gep4, Crd1 </td>
+              <td> --- </td>
+              <td> 750 (glycerol_3_p_mito), 5 (CDP_DG) </td>
+              <td> 2</td>
+              <td> 2 CDP-DG + Gly-3-P --> CL + 2 CMP</td>
+            </tr>
+              <tr>
+                <td> XV </td>
+                <td> self.inositol_synthesis</td>
+                <td>Ino1, Inm1 </td>
+                <td> --- </td>
+                <td> 1000 (glucose_6_p) </td>
+                <td> 5</td>
+                <td> Glu-6-P --> inositol</td>
+              </tr>
+              <tr>
+                <td> XVI </td>
+                <td> self.PI_synthase</td>
+                <td>Pis1 </td>
+                <td> --- </td>
+                <td> 210 (inositol), 5 (CDP_DG) </td>
+                <td> 5</td>
+                <td> CDP-DG + inositol --> PI + CMP</td>
+              </tr>
+              <tr>
+                <td> XVII </td>
+                <td> self.Ergosterol_synthase</td>
+                <td>Erg proteins </td>
+                <td> --- </td>
+                <td> 666.67 (acetyl_coa) </td>
+                <td> 25</td>
+                <td> 18 ACoA --> ergosterol</td>
+              </tr>
+              <tr>
+                  <td> XVIII </td>
+                  <td> self.Sterylester_synthase</td>
+                  <td>Are1/Are2 </td>
+                  <td> 0.4 (G1), 0.2 (S-M) </td>
+                  <td> --- </td>
+                  <td> 25</td>
+                  <td> ergosterol + ACoA --> sterylester</td>
+              </tr>
+              <tr>
+                <td> XIX </td>
+                <td> self.ceramide_synthesis</td>
+                <td>Lcb1/2, Tsc10, Lag1/Lac1 </td>
+                <td> --- </td>
+                <td> 250 (serine) </td>
+                <td> 2</td>
+                <td> serine + 2 Acyl-CoA --> ceramide</td>
+              </tr>
+              <tr>
+                  <td> XX </td>
+                  <td> self.Sphingolipid_synthase</td>
+                  <td>Aur1, Sur1/Csh1/Csg2, Ipt1 </td>
+                  <td> --- </td>
+                  <td> 5 (PI), 300 (ceramide) </td>
+                  <td> 2</td>
+                  <td> 2 PI + ceramide + GDP-Mannose --> SL + 2 DAG</td>
+              </tr>
+                <tr>
+                  <td> XXI (modified) </td>
+                  <td> self.TAG_synthase</td>
+                  <td>Dga1</td>
+                  <td> --- </td>
+                  <td> 30 (acyl_coa), 5 (DAG) </td>
+                  <td> 340</td>
+                  <td> DAG + Acyl-CoA --> TAG</td>
+              </tr>
+              <tr>
+                <td> XXII (modified) </td>
+                <td> self.TAG_lipase</td>
+                <td>Tgl4, Tgl1 </td>
+                <td> 0.05 (G1), 0.6 (S-M) </td>
+                <td> --- </td>
+                <td> 0 </td>
+                <td> TAG --> DAG + Acyl-CoA, Sterylester --> ergosterol + Acyl-CoA </td>
+            </tr>
+            <tr>
+                <td> XXIII </td>
+                <td> self.DAG_synthase</td>
+                <td>Pah1 </td>
+                <td> 3 (G1), 0.1 (S-M)</td>
+                <td> ---</td>
+                <td> 340</td>
+                <td> PA --> DAG + Pi </td>
+            </tr>
+            
+          </tbody>
+      </table>
+    </section>
+
+</section>
+
+
+<section class="descriptionsection sectiondark2">
+<h2 class="section-header"> References </h2>
+<p>
+Benzinger, D., & Khammash, M. (2018). Pulsatile inputs achieve tunable attenuation of gene expression variability and graded multi-gene regulation. Nature Communications. https://doi.org/10.1038/s41467-018-05882-2
+<br><br>
+Breker M, et al. (2013) A novel single-cell screening platform reveals proteome plasticity during yeast stress responses. J Cell Biol 200(6):839-50
+https://rupress.org/jcb/article/200/6/839/37333/A-novel-single-cell-screening-platform-reveals
+<br><br>
+Davidson, E. A., Basu, A. S., & Bayer, T. S. (2013). Programming Microbes Using Pulse Width Modulation of Optical Signals. Journal of Molecular Biology, 425(22), 4161–4166. https://doi.org/https://doi.org/10.1016/j.jmb.2013.07.036
+<br><br>
+Ho, B., Baryshnikova, A., & Brown, G. W. (2018). Unification of Protein Abundance Datasets Yields a Quantitative Saccharomyces cerevisiae Proteome. Cell Systems. https://doi.org/10.1016/j.cels.2017.12.004
+<br><br>
+Kurat, C. F., Wolinski, H., Petschnigg, J., Kaluarachchi, S., Andrews, B., Natter, K., & Kohlwein, S. D. (2009). Cdk1/Cdc28-Dependent Activation of the Major Triacylglycerol Lipase Tgl4 in Yeast Links Lipolysis to Cell-Cycle Progression. Molecular Cell, 33(1), 53–63. https://doi.org/10.1016/j.molcel.2008.12.019
+<br><br>
+Ma, T., Shi, B., Ye, Z., Li, X., Liu, M., Chen, Y., Xia, J., Nielsen, J., Deng, Z., & Liu, T. (2019). Lipid engineering combined with systematic metabolic engineering of Saccharomyces cerevisiae for high-yield production of lycopene. Metabolic Engineering, 52, 134–142. https://doi.org/10.1016/j.ymben.2018.11.009
+<br><br>
+Palaniappan, S. K., Yachie-Kinoshita, A., & Ghosh, S. (2019). Computational Systems Biology (S. Ranganathan, M. Gribskov, K. Nakai, & C. B. T.-E. of B. and C. B. Schönbach (eds.); pp. 789–795). Academic Press. https://doi.org/https://doi.org/10.1016/B978-0-12-809633-8.20287-2
+Rajakumari, S., & Daum, G. (2010). Multiple functions as lipase, steryl ester hydrolase, phospholipase, and acyltransferase of Tgl4p from the yeast Saccharomyces cerevisiae. Journal of Biological Chemistry, 285(21), 15769–15776. https://doi.org/10.1074/jbc.M109.076331
+<br><br>
+Schützhold, V., Hahn, J., Tummler, K., & Klipp, E. (2016). Computational modeling of lipid metabolism in yeast. Frontiers in Molecular Biosciences, 3(SEP). https://doi.org/10.3389/fmolb.2016.00057
+<br><br>
+Zinser, E., Sperka-Gottlieb, C. D., Fasch, E. V, Kohlwein, S. D., Paltauf, F., & Daum, G. (1991). Phospholipid synthesis and lipid composition of subcellular membranes in the unicellular eukaryote Saccharomyces cerevisiae. Journal of Bacteriology, 173(6), 2026–2034. https://doi.org/10.1128/jb.173.6.2026-2034.1991
+</p>
+</section>
+  
+  <div class="footer">
+    <div class="contactblock">
+      <p>Contact Us:</p> <p> estoniatuit@gmail.com </p>
+      <div class="social">
+        <p>Facebook:</p>
+        <a href="https://www.facebook.com/iGEMEST" target="_blank">
+        <svg
+          
+          id="facebook"
+          enable-background="new 0 0 24 24"
+          viewBox="0 0 24 24"
+          width="70"
+        >
+        <path
+          fill="#FFF"
+          d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"
+        />
+        </svg></a>
+        <p>Instagram:</p>
+        <a href="https://www.instagram.com/igemestonia/" target="_blank"> <svg class="instagram" viewBox="0 0 511 511.9" width="60">
+          <path
+            fill="#FFF"
+            d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"
+          />
+          <path
+            fill="#FFF"
+            d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"
+          />
+          <path
+            fill="#FFF"
+            d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"
+          />
+        </svg></a>
+      </div>
+    </div>
+    <div class="sponsorblock">
+      <a href="https://www.neb.com" target="_blank"> <img src="https://2020.igem.org/wiki/images/8/87/T--Estonia_TUIT--BioLabsW.png" > </a>
+      <img src="https://2020.igem.org/wiki/images/3/39/T--Estonia_TUIT--ecsbW.png" >
+      <a href="https://eu.idtdna.com/pages" target="_blank"> <img src="https://2020.igem.org/wiki/images/b/b0/T--Estonia_TUIT--idtW.png" > </a>
+      <a href="https://se.mathworks.com" target="_blank"> <img src="https://2020.igem.org/wiki/images/2/29/T--ESTONIA_TUIT--MathWorks.png" > </a>
+      <a href="https://www.tuit.ut.ee/en" target="_blank"> <img src="https://2020.igem.org/wiki/images/b/ba/T--Estonia_TUIT--tuitW.png" > </a>
+    </div>
+  </div>
+
+  <script type="module" src="https://2020.igem.org/Team:Estonia_TUIT/bootstrap?action=raw&amp;ctype=text/javascript"></script>
+  <script type="module" src="https://2020.igem.org/Team:Estonia_TUIT/stylepurger?action=raw&amp;ctype=text/javascript"></script>
+</body>
+
+</html>
