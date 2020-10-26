@@ -8,6 +8,10 @@
   }
 
   .carousel-indicators {
+    // display: table !important;
+    // line-height: 15px !important;
+    // margin-left: 18% !important;
+
     li {
       p {
         font-size: 1.75vw;
@@ -258,5 +262,16 @@
         }
       }
     }
+  }
+}
+
+.arrow-static {
+  position: absolute;
+  top: 45vw;
+}
+
+.carousel-indicators.indicator-row2 {
+  li {
+    text-indent: 5%;
   }
 }

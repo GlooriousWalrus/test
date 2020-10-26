@@ -5,14 +5,30 @@ var orb = null;
 var pct = 0;
 var resizeId = null;
 
+setTimeout(function(){ 
+  init();
+     window.addEventListener('resize', handleResize);
+     window.addEventListener('scroll', moveball);
+}, 1000);
+
+
+function onImgLoad() {
+ loadedImgCount++;
+
+   if (loadedImgCount === 4) {
+
+   }
+
+}
+
+
 function onImgLoad() {
   loadedImgCount++;
 
-  if (loadedImgCount === 4) {
-    init();
+    if (loadedImgCount === 4) {
+    }
     window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', moveball);
-  }
 }
 
 function moveball() {
