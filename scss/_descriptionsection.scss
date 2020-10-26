@@ -78,12 +78,12 @@
   }
 
   .image-placeholder {
-    margin-top: 6vw;
-
+    //changed from 6 to 1 margin top; changed background color to transprent
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     padding: 1vw;
-
     border-radius: 5vw;
-    background-color: #eee;
+    background-color: transparent;
     display: flex;
     height: 35vw;
     width: 58vw;
