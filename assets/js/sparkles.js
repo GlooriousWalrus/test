@@ -45,7 +45,7 @@ tsParticles.load('tsparticles', {
         enable: true,
         value_area: 300,
       },
-      value: 80,
+      value: 40,
     },
     opacity: {
       value: 0.7,

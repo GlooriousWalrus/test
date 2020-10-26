@@ -9,38 +9,149 @@
 .generic-section.humanpract {
   position: relative;
   z-index: 4;
+
+  .ihp-button-container {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-bottom: 2vw;
+    width: 40vw;
+    display: flex;
+    justify-content: space-around;
+    .ihp-button {
+      width: 15vw;
+      font-size: 2vw;
+
+      background-color: #0092b0;
+      color: white;
+    }
+  }
 }
 
 .humanpractice-section {
-  height: 300vw;
-  background: linear-gradient(45deg, #008c96 0%, #0092b0 100%);
+  background: linear-gradient(-155deg, #0092b0 10%, #004c57 80%);
   display: flex;
   justify-content: center;
 
   .lolkek {
+    position: relative;
+    z-index: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    width: 50vw;
+    justify-content: center;
+    width: 45vw;
 
     .integrated-sun {
       border-radius: 50%;
       width: 16vw;
       height: 16vw;
+      margin-left: -20vw;
+      margin-top: 10vw;
+      margin-bottom: 10vw;
       background-color: white;
+      box-shadow: inset 0 0 50px white, inset 20px 0 80px white,
+        inset -20px 0 80px white, inset 20px 0 300px white,
+        inset -20px 0 300px white, 0 0 50px white, -10px 0 80px white,
+        10px 0 80px white;
 
       .integrated-sun-header {
         font-size: 6vw;
         color: #008c96;
         text-shadow: 2px 2px 4px white;
-        margin-left: 5vw;
+        margin-top: 4vw;
+        margin-left: 4vw;
+        padding: 0;
+        overflow: visible;
+      }
+
+      .integrated-sun-header-2 {
+        font-size: 3.8vw;
+        color: white;
+        white-space: nowrap;
+        margin-top: -2vw;
+        margin-left: 17vw;
+        padding: 0;
+        overflow: visible;
       }
     }
 
-    p {
-      font-size: 2vw;
-      text-align: justify;
+    .integrated-pic-ball {
+      border-radius: 50%;
+      position: sticky;
+      // top: 90vw;
+      // left: -22vw;
+      width: 19vw;
+      height: 19vw;
+      background-color: white;
+      box-shadow: inset 0 0 15px white, inset 20px 0 40px white,
+        inset -20px 0 40px white, inset 20px 0 300px white,
+        inset -20px 0 300px white, 0 0 30px white, -10px 0 40px white,
+        10px 0 40px white;
     }
+
+    // .integrated-pic-ball2 {
+    //   top: 130vw;
+    //   left: 50vw;
+    // }
+
+    // .integrated-pic-ball3 {
+    //   top: 170vw;
+    // }
+
+    .ihp-block1,
+    .ihp-block2,
+    .ihp-block3,
+    .ihp-block4,
+    .ihp-block5 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .line-spacer {
+      margin-top: 7vw;
+    }
+
+    p {
+      font-size: 1.85vw;
+      text-align: justify;
+
+      b {
+        color: #00c5d0;
+
+        &.boldyellow {
+          color: #ffd522;
+        }
+      }
+    }
+
+    .pill-button {
+      margin-top: 2vw;
+      background-color: white;
+      border-radius: 5vw;
+      padding-left: 2vw;
+      padding-right: 2vw;
+      font-family: 'Muli';
+      font-size: 2vw;
+      color: #008c96;
+      margin-bottom: 10vw;
+    }
+  }
+}
+
+#curvething {
+  // display: flex;
+  z-index: 1;
+  // position: absolute;
+  top: 0;
+  width: inherit;
+
+  canvas {
+    position: absolute;
+    left: 0;
+    z-index: 3;
   }
 }
